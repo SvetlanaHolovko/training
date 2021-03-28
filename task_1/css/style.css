@@ -1,0 +1,16 @@
+
+.block {
+   background: cyan;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+span {
+   color: rgb(240, 26, 26);
+   font-size: 26px;
+}
+.checkbox {
+   margin-bottom: 20px;
+}
+.select {
+   margin-bottom: 100px;
+}

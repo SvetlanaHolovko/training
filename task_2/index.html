@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form and input</title>
+</head>
+<body>
+   <form action="#">
+      <fieldset>
+         <legend>Form title</legend>
+         <!-- Input Types -->
+         <b>Your name:</b>
+         <input type="text" placeholder="Enter the name"><br><br>
+         <b>Your age:</b>
+         <input type="number" placeholder="Enter the age"><br><br>
+         <b>Your email:</b>
+         <input type="email" placeholder="Enter the email"><br><br>
+         <b>Password:</b>
+         <input type="password" placeholder="********"><br><br>
+         <b>Enter phone number:</b>
+         <input type="tel" placeholder="+380(__) ___-__-__"><br><br>
+         <i>Hidden input:</i>
+         <input type="hidden"><br><br>
+         <label for="party">Enter a date and time for your party booking:</label>
+         <input id="party" type="date" name="partydate" value="2021-01-01"><br><br>
+         <b>Select File:</b>
+         <input type="file" ><br><br>
+         <b>Reset Data:</b>
+         <input type="reset" ><br><br>
+
+         <label>Click me <input type="text"></label><br>
+         <label for="username">Click me</label>
+         <input type="text" id="username"><br><br>
+
+         <input type="radio" id="genderRadio_1" name="gender" value="man" >
+         <label for="genderRadio_1">Man</label><br>
+         <input type="radio" id="genderRadio_2" name="gender" value="woman" >
+         <label for="genderRadio_2">Woman</label><br><br>
+
+         <input type="checkbox" id="red" name="red" checked>
+         <label for="red">Red</label><br>
+         <input type="checkbox" id="blue" name="blue">
+         <label for="blue">Blue</label><br>
+         <input type="checkbox" id="yellow" name="yellow">
+         <label for="yellow">Yellow</label><br>
+         <input type="checkbox" id="pink" name="pink">
+         <label for="pink">Pink</label><br><br>
+
+         <input type="submit" value="submit"><br>
+         <input type="button" value="button"><br>
+
+         <p>Comment<br>
+            <textarea name="comment" cols="40" rows="8" placeholder="comment"></textarea>
+         </p>
+
+         <!-- Input atributes -->
+         <label for="nicname"><b>Your nicname:</b></label>
+         <input type="text" id="nicname" required minlength="8" maxlength="10"
+         placeholder="Enter the nicname"><br><br>
+
+         <select>
+            <option value="default">Select option</option>
+            <option value="tea">Tea</option>
+            <option value="coffee">Coffee</option>
+            <option value="cappuccino">Cappuccino</option>
+         </select><br><br>
+
+         <button type="button">Button</button><br>
+         <button type="submit">Submit</button><br>
+
+      </fieldset>
+   </form><br>
+
+   <!-- Форма с паролем -->
+   <form onsubmit="alert('Отправить пароль?');">
+      <fieldset>
+         <legend>Form Password</legend>
+         <p>Форма с полем пароля, которое должно содержать 8 или более символов,<br>
+         состоящих как минимум из одной цифры и одной прописной и строчной буквы:</p>
+         <label for="pwd">Password:</label>
+         <input type="password" id="pwd" name="pwd" maxlength="15" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+         title="Должен содержать как минимум одну цифру, одну прописную и строчную букву и как минимум 8 или более символов.">
+         <input type="submit">
+      </fieldset>
+   </form><br>
+
+   <!-- Форма с шаблоном номера телефона и календарем -->
+   <form onsubmit="alert('Отправка номера телефона');">
+      <fieldset>
+         <legend>Form Phone Ukraine</legend>
+         <p>Введите телефон в формате +38(xxx)xxx-xx-xx, где вместо x должна быть цифра:</p>
+         <label for="phone">Введите номер телефона:</label>
+         <input type="tel" id="phone" name="phone" pattern="[\+]\d{2}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
+            required value="+38"><br><br>
+         <label for="calendar">Выберите дату и время вечеринки:</label>
+         <input type="datetime-local" id="calendar" name="partyCalendar"
+         min="2021-03-22T08:30" max="2021-03-30T16:30" required><br><br>
+         <input type="submit">
+      </fieldset>
+   </form>
+</body>
+</html>
