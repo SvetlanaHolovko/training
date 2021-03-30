@@ -32,6 +32,12 @@ body {
 .header-title {
    margin: 0px 0px 60px 0px;
    font-size: 60px;
+   border: 1px solid #fff;
+   border-radius: 50px;
+   text-align: center;
+   background-color: #fff;
+   color: #445162;
+   padding: 5px 10px;
 }
 .header-list li {
    margin: 0px 0px 35px 0px;
@@ -43,10 +49,12 @@ body {
 
 /* Main */
 .main-container {
+   width: 1180px;
+   margin: 0 auto;
    padding: 20px 0;   
    background: #f5f5f5;
 }
-.main-content-list {
+.main-content {
    display: flex;
    margin: 0 auto;
 }
@@ -62,6 +70,7 @@ body {
    margin-bottom: 20px;
 }
 .sidebar-content {
+   margin: 0;
    margin-top: 50px;
    margin-left: 40px;
    padding: 0 10px 0 0;
@@ -71,7 +80,6 @@ body {
    font-style: normal;
    font-weight: bold;
    font-size: 22px;
-   line-height: 1.5;
    padding-bottom: 8px;
    margin: 0;
 }
@@ -79,14 +87,12 @@ body {
    font-style: normal;
    font-weight: bold;
    font-size: 14px;
-   line-height: 1.5;
    margin-right: 7px;
 }
 .sidebar-section-link {
    font-style: normal;
    font-weight: normal;
    font-size: 14px;
-   line-height: 1.5;
    color: #445162;
    opacity: 0.7;
 }
@@ -102,9 +108,13 @@ body {
    font-style: normal;
    font-weight: bold;
    font-size: 29px;
-   color: #445162;
    margin: 0 0 22px 0px;
    text-align: center;
+   border: 1px solid #445162;
+   border-radius: 50px;
+   background-color: #445162;
+   color: #c5c9cf;
+   padding: 20px 10px;
 }
 .home-section-text {
    font-style: normal;
