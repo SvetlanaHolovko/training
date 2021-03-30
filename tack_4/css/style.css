@@ -39,3 +39,18 @@ body {
 .header-list li:last-child {
    margin: 0;
 }
+
+/* Footer */
+.footer {
+   background-color: #445162;
+}
+.footer-row {
+   display: flex;
+   height: 65px;
+   justify-content: center;
+   align-items: center;
+}
+.footer-text {
+   color: #fff;
+   font-size: 12px;
+}
