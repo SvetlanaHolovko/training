@@ -2,14 +2,14 @@
 @font-face {
 	font-family: 'Marvin-Round';
 	src: url('../fonts/Marvin-Round.eot');
-	src: local('☺'), url('../fonts/Marvin-Round.woff') format('woff'), url('../fonts/Marvin-Round.ttf') format('truetype'), url('../fonts/Marvin-Round.svg') format('svg');
+	src: local('☺'), url('../fonts/Marvin-Round.woff') format('woff'), url('../fonts/Marvin-Round.ttf') format('truetype'),
+   url('../fonts/Marvin-Round.svg') format('svg');
 	font-weight: 400;
 	font-style: normal;
 }
 
 body {
    font-family: 'Comfortaa', cursive;
-   font-size: 14px;
 }
 .wrapper {
    min-height: 100%;
@@ -17,6 +17,8 @@ body {
    display: flex;
    flex-direction: column;
 }
+
+/* header  */
 .header {
    padding: 20px 0;
    background-color: #445162;
@@ -33,33 +35,33 @@ body {
    padding: 0px 20px 0px 0px;
 }
 .header-body {
-   color: #ffffff;
    padding: 0px 20px 0px 0px;
+   color: #ffffff;
    opacity: .7;
 }
 .header-title {
    font-family: 'Comfortaa', cursive;
-   margin: 0px 0px 60px 0px;
    font-size: 60px;
    font-weight: 700;
+   text-align: center;
    border: 1px solid #fff;
    border-radius: 50px;
-   text-align: center;
    background-color: #fff;
    color: #445162;
+   margin: 0px 0px 60px 0px;
    padding: 5px 10px;
 }
 .header-list li {
    font-family: 'Comfortaa', cursive;
+   font-size: 24px;
    font-weight: 500;
    margin: 0px 0px 35px 0px;
-   font-size: 24px;
 }
 .header-list li:last-child {
    margin: 0;
 }
 
-/* Main */
+/* main */
 .main-container {
    width: 1180px;
    margin: 0 auto;
@@ -71,7 +73,7 @@ body {
    margin: 0 auto;
 }
 
-/* Sidebar */
+/* sidebar-section */
 .sidebar-section {
    background: #b0caec;
    color: #445162;
@@ -82,31 +84,30 @@ body {
    margin-bottom: 20px;
 }
 .sidebar-content {
-   margin: 0;
    margin-top: 50px;
    margin-left: 40px;
    padding: 0 10px 0 0;
 }
 .sidebar-title {
    font-family: 'Comfortaa', cursive;
-   font-style: normal;
-   font-weight: 700;
    font-size: 22px;
+   font-weight: 700;
+   font-style: normal;
    padding-bottom: 8px;
    margin: 0;
 }
 .sidebar-section-type {
    font-family: 'Comfortaa', cursive;
-   font-style: normal;
-   font-weight: 700;
    font-size: 14px;
+   font-weight: 700;
+   font-style: normal;
    margin-right: 7px;
 }
 .sidebar-section-link {
    font-family: 'Comfortaa', cursive;
-   font-style: normal;
-   font-weight: 500;
    font-size: 14px;
+   font-weight: 500;
+   font-style: normal;
    color: #445162;
    opacity: 0.7;
 }
@@ -114,37 +115,59 @@ body {
    text-decoration: none;
 }
 
-/* Home */
+/* home-section */
 .home-section {
    padding: 20px 70px 0 70px;
 }
 .home-section-title {
    font-family: 'Comfortaa', cursive;
-   font-style: normal;
-   font-weight: 700;
    font-size: 29px;
-   margin: 0 0 22px 0px;
+   font-weight: 700;
+   font-style: normal;
    text-align: center;
    border: 1px solid #445162;
    border-radius: 50px;
    background-color: #445162;
    color: #c5c9cf;
+   margin: 0 0 22px 0px;
    padding: 20px 10px;
 }
 .home-section-text {
 	font-family: 'Marvin-Round';
+   font-size: 14px;
    font-weight: 400;
    font-style: italic;
-   font-size: 14px;
-   line-height: 1.5;
    color: #445162;
-   margin: 0 0 22px 0px;
+   margin: 0 0 20px 0px;
+}
+
+/* author-section */
+.author-section {
+   padding: 20px 70px 0 70px;
+   text-align: center;
+}
+.author-section h3 {
+   font-family: 'Marvin-Round';
+   font-size: 16px;
+   font-weight: 400;
+   font-style: italic;
+   color: #445162;
+   margin: 0 0 20px 0px;
+}
+.author-section p {
+   font-family: 'Marvin-Round';
+   font-size: 14px;
+   font-weight: 400;
+   font-style: italic;
+   color: #445162;
+   margin: 0 0 20px 0px;
 }
 
 
-/* Footer */
+/* footer */
 .footer {
    background-color: #445162;
+   padding-top: 20px;
 }
 .footer-row {
    padding-top: 15px;
@@ -165,7 +188,6 @@ body {
 .footer-nav-list li:first-child {
    margin-left: 0;
 }
-
 .footer-nav-link {
    font-family: 'Comfortaa', cursive;
    font-size: 24px;
@@ -186,5 +208,4 @@ body {
    color: #fff;
    font-size: 12px;
    opacity: .7;
-   padding: 20px 0;
 }
