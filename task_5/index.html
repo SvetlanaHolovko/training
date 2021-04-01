@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Position</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   <!-- block-parent  (fixed/sticky/relative/absolute) -->
+   <div class="block-parent block">
+      <div class="block__1">
+         <h1>.block__1 fixed width 100% z-index</h1>
+      </div>
+      <div class="block__2">
+         <h2>.block__2 sticky</h2>
+      </div>
+      <div class="block__3">
+         <h2>.block__3 relative right z-index</h2>
+      </div>
+      <div class="block__4">
+         <h4>.block__4  absolute to block-parent relative</h4>
+      </div>	
+      <div class="block__5">
+         <h4>.block__5 absolute to block-parent relative width 100%</h4>
+      </div>	
+      <div class="block__6">
+         <h1>.block__6 fixed</h1>
+      </div>
+      <div class="block__7">
+         <h2>.block__7 relative left</h2>
+      </div>	
+      <div class="block__8">
+         <h2>.block__8 sticky</h2>
+      </div>				
+      <div class="block__9">
+         <h2>.block__9 sticky</h2>
+      </div>				
+   </div>
+
+   <!-- list-text: img position absolute to "li" relative  -->
+   <section class="list-text">
+      <h2>list-text: img position absolute</h2>
+      <ul class="list">
+         <li>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Tenetur, consequuntur. Dolorem accusantium praesentium totam ullam consequuntur impedit consequatur. Quasi, nesciunt
+         deleniti, fuga rerum doloribus veniam necessitatibus itaque aut dolor nobis.</li>
+         <li>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</li>
+         <li>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</li>
+         <li>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</li>
+         <li>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</li>
+      </ul>
+   </section>
+
+   <!-- float (left / right / clearfix)  -->
+   <div id="wrapper">
+      <section class="float">
+         <h2>List - Float</h2>
+         <div class="header">
+            <h2><span>F</span>loat left / right</h2>
+            <p> Float Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam at veritatis reprehenderit laudantium natus
+            ad autem velit, consequuntur nam illo perferendis necessitatibus! Eum, blanditiis magnam! Ex earum impedit!</p>
+         </div>
+         <div class="header-inner">
+            <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#news">News</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <li><a href="#about">About</a></li>
+            </ul>
+         </div>
+
+         <div class="clearfix">
+            <div class="column menu">
+               <ul>
+                  <li>Float</li>
+                  <li>left</li>
+                  <li>right</li>
+                  <li>clearfix</li>
+               </ul>
+            </div>
+
+            <div class="column content">
+               <img src="img/swimmer.jpg" alt="swimmer">           
+               <h2>Lorem</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure officia rem eius fuga, vitae facere aperiam
+               cupiditate quod quisquam alias harum quae quas ipsam molestiae possimus tempora voluptatibus perferendis
+               asperiores.</p>
+               <p>You will learn more about web layout and responsive web pages in a later chapter.You will learn more about
+               web layout and responsive web pages in a later chapter.</p>
+            </div>
+         </div>
+
+         <div class="footer">
+            <p>&#169; 2021 Float S.Holovko</p>
+         </div>
+      </section>
+   </div>
+</body>
+</html>
