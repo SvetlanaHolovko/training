@@ -235,12 +235,6 @@ body {
    margin-right: 20px;
 }
 
-.clearfix::after {
-   content: "";
-   clear: both;
-   display: table;
-}
-
 .menu ul {
    list-style-type: none;
    margin: 0;
