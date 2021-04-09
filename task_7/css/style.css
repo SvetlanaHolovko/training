@@ -1,0 +1,182 @@
+@font-face {
+	font-family :'BlowholeBBRegular';
+	src :url('../fonts/BlowholeBB.eot');
+	src :url('../fonts/BlowholeBB.woff') format('woff'),
+		url('../fonts/BlowholeBB.ttf') format('truetype');
+	font-weight :normal;
+	font-style :normal;
+}
+
+body {
+	font-family :'BlowholeBBRegular';
+   background-color :#5B4A02;  
+}
+
+#wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+/* header  */
+.header {
+	background-color :#5B4A02;  
+   padding: 6px;
+}
+
+.header__top {
+   max-width :960px;
+	margin :0 auto 18px;
+}
+
+.header__logo img {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+.header__nav {
+   overflow: hidden;
+   margin-bottom: 23px;
+   background-color :#7e6000; 
+   height: auto;
+}
+
+.header__container {
+   width: 100%;
+   max-width : 960px;
+   padding: 45px 15px 0 50px;
+   margin: 0 auto;
+}
+
+.header__nav-list {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: stretch;
+   margin: 0 -15px;
+}
+
+.header__nav-list li {
+   padding: 0 15px;
+   margin-bottom: 15px;
+}
+
+.header__nav-link {
+	font-family :'BlowholeBBRegular';
+	font-size :30px;
+   text-decoration: none;
+	color :#FDFDFC;
+   transition: color .5s linear;
+}
+
+.header__nav-link:hover {
+   color : #5B4A02;
+}
+
+/* main__container */
+.main__container {
+   overflow: hidden;
+}
+
+.intro {
+   width: 100%;
+   max-width: 960px;
+   margin: 0 auto;
+   padding: 0 10px;
+	background-color :#F9F9F9;
+}
+
+.intlo__title {
+   width: 100%;
+   padding: 50px 20px 0;
+   text-align: center;
+	margin-bottom :60px;
+}
+
+.intlo__title h1 {
+   font-family :'BlowholeBBRegular';
+	font-size :36px;
+	color :#68431B;
+}
+
+.card {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 0 20px 0;
+   border-bottom: 4px dotted #000;
+}
+
+.card__item {
+   padding: 0 20px;
+   max-width: 33.3333%;
+   margin-bottom: 45px;
+}
+
+.card img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.intro__text {
+   width: 100%;
+   padding: 40px 20px 0;
+}
+
+.intro__text h2 {
+   font-family :'BlowholeBBRegular';
+	font-size :30px;
+	color :#68431B;
+	margin-bottom : 5px;
+   padding: 10px;
+   text-align: left;
+}
+
+.intro__text p {
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size :16px;
+   font-weight: normal;
+   line-height: 1.5;
+	color :#000000;
+	margin-bottom : 20px;
+   padding: 10px;
+   opacity: 0.9;
+}
+
+/* footer */
+.footer {
+   overflow: hidden;
+   background-color :#7e6000; 
+   height: auto;
+}
+
+.footer__container {
+   width: 100%;
+   max-width : 960px;
+   padding: 45px 15px 0 50px;
+   margin: 0 auto;
+}
+
+.footer__social {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: stretch;
+   padding: 0 15px;
+   margin-bottom: 15px;
+}
+
+.footer__social a {
+	font-family :'BlowholeBBRegular';
+	font-size :30px;
+   text-decoration: none;
+	color :#FDFDFC;
+   padding: 0 15px;
+   margin-bottom: 15px;
+   transition: color .5s linear;
+}
+
+.footer__social a:hover {
+   color : #5B4A02;
+}
