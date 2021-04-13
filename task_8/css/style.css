@@ -47,7 +47,7 @@ body {
 .header__list {
     display: inline-block;
     vertical-align: middle;
-    max-width: calc(50% - 20px);
+    max-width: calc(100% - 70px);
 }
 
 .header__list li {
@@ -70,14 +70,13 @@ body {
     font-size: 12px;
     height: 23px;
     width: 23px;
-    line-height: 1.6;
+    line-height: 1.9166;
     margin: 0 0 -2px 6px;
     text-align: center;
 }
 
 .header__social {
     float: right;
-    max-width: calc(50%);
 }
 
 .clearfix::after {
@@ -187,7 +186,7 @@ body {
     background-color: #fff; 
     width: calc(100% - 30px);
     padding: 20px;
-    margin: 0 15px 15px;
+    margin: 0 15px 30px;
 }
 
 .card__item h2 {
@@ -285,7 +284,7 @@ body {
     font-size: 12px;
     height: 23px;
     width: 23px;
-    line-height: 1.6;
+    line-height: 1.916;
     margin: 0 0 -2px 6px;
     text-align: center;
     float: right;
@@ -365,6 +364,8 @@ body {
     display: inline-block;
     vertical-align: middle; 
     margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
 }
 
 .footer__copyright h4 {
@@ -377,6 +378,8 @@ body {
 .footer__design {
     float: right;
     margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
 }
 
 .footer__design h4 {
