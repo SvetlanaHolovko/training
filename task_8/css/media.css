@@ -6,6 +6,9 @@
     .header__top a {
         font-size: 35px;
     }
+    .header__list a {
+        margin-bottom: 0;
+    }
     .intro__title h1 {
         font-size: 40px;    
     }
@@ -28,7 +31,6 @@
         max-width: calc(30%);
     }
     .content__nav li {
-        padding: 25px 20px;
         font-size: 18px;
         line-height: 1.6;
     }
@@ -45,8 +47,8 @@
     .heder__nav {
         margin-bottom: 15px;
     }
-    .header__list li {
-        padding: 15px;
+    .header__list a {
+        padding: 20px;
     }
     .header__social a {
         font-size: 30px;
@@ -101,12 +103,6 @@
     .header__top a {
         font-size: 45px;
     }
-    .heder__nav {
-        margin-bottom: 20px;
-    }
-    .header__list li {
-        padding: 20px;
-    }
     .header__social a {
         font-size: 35px;
     }
@@ -143,9 +139,6 @@
     }
     .content__nav {
         padding-top: 20px;
-    }
-    .content__nav li {
-        padding: 25px;
     }
     .gellery__title {
         margin-bottom: 20px;

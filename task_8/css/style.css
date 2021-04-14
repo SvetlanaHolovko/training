@@ -40,8 +40,8 @@ body {
 .heder__nav {
     background-color: #152732;
     color: #fff;
-    padding: 10px;
     margin-bottom: 10px;
+    padding: 5px;
 }
 
 .header__list {
@@ -53,11 +53,20 @@ body {
 .header__list li {
     display: inline-block;
     vertical-align: middle;
-    padding: 10px;
+    text-decoration: none;
 }
 
-.header__list li:hover {
-    background: #2b4c61;
+.header__list a {
+    display: block;
+    text-decoration: none; 
+    color: #fff;  
+    padding: 10px; 
+    transition: background-color .8 linear;
+    margin-bottom: 10px
+}
+
+.header__list li a:hover {
+    background-color: #2b4c61;
     cursor: pointer;
 }
 
@@ -71,7 +80,7 @@ body {
     height: 23px;
     width: 23px;
     line-height: 1.9166;
-    margin: 0 0 -2px 6px;
+    margin-left: 6px;
     text-align: center;
 }
 
@@ -266,14 +275,20 @@ body {
 .content__nav li {
     font-size: 16px;
     line-height: 1.6;
-    padding: 10px;
-    display: block;
 }
 
-.content__nav li:hover {
-    background: #2b4c61;
-    color: #fff;
+.content__nav a {
+    text-decoration: none;
+    color: #444;
+    display: block;
+    padding: 20px;
+    transition: background-color .8 linear, color .8 linear;
+}
+
+.content__nav a:hover {
+    background-color: #2b4c61;
     cursor: pointer;
+    color: #fff; 
 }
 
 .content__nav li span {
