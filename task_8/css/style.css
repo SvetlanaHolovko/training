@@ -61,7 +61,7 @@ body {
     text-decoration: none; 
     color: #fff;  
     padding: 10px; 
-    transition: background-color .8 linear;
+    transition: background-color .2s linear;
     margin-bottom: 10px
 }
 
@@ -147,6 +147,7 @@ body {
     padding: 5px 7px;
     cursor: pointer;
     border-radius: 3px;
+    transition: background-color .2s linear;
 }
 
 .intro__btn:hover {
@@ -156,34 +157,35 @@ body {
 
 .intro__circle {
     text-align: center;
-    padding: 0 20px;
     margin: 0 auto;
 }
 
-.intro__circle a:hover {
-    background: #869791;    
+.circle__icon {
+    display: inline-block;
+}
+
+.circle__icon span {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background-color: #D6D6D6;
+    display: inline-block;
+    border-radius: 50%;
+    transition: background-color .2s linear;
+}
+
+.circle__icon span:hover {
+    background-color: #869791;    
     cursor: pointer;
 }
 
-.intro__circle a {
-    position: relative;
-    text-decoration: none;
-    background: #D6D6D6;
-    border-radius: 50%;
+.active span {
+    background-color: #869791; 
 }
 
-.icon-circle4bl {
-    color: #869791; 
-    font-size: 13px;
-    margin: 5px;
+.active span:hover {
+    background-color: #D6D6D6; 
 }
-
-.icon-circle4 {
-    color: #D6D6D6;
-    font-size: 13px;
-    margin: 5px;
-}
-
 
 /* Section Cadr */
 .card__row {
@@ -282,7 +284,7 @@ body {
     color: #444;
     display: block;
     padding: 20px;
-    transition: background-color .8 linear, color .8 linear;
+    transition: background-color .2s linear, color .2s linear;
 }
 
 .content__nav a:hover {
