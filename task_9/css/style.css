@@ -68,20 +68,20 @@ body {
 }
 
 .flex__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--secondary);
     border: 1px solid #000;
     margin-bottom: -1px;
     padding: 15px;
     width: 100%;
     min-height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .flex__item p {
-    margin-bottom: var(--mb-5);  
     display: block;
+    margin-bottom: var(--mb-5);  
 }
 
 .flex__sidebar {
