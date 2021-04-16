@@ -64,21 +64,24 @@ body {
     padding: 10px 10px 0 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
 }
 
 .flex__item {
     background: var(--secondary);
     border: 1px solid #000;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
     padding: 15px;
     width: 100%;
     min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flex__item p {
-    margin-bottom: var(--mb-5);   
+    margin-bottom: var(--mb-5);  
+    display: block;
 }
 
 .flex__sidebar {

@@ -6,7 +6,8 @@
         font-size: 30px;
     }
     .flex__column {
-        max-width: calc(70% - 20px) ;
+        max-width: calc(70% - 20px);
+        height: 100%;
         margin: 0 10px 20px;
         padding: 0 10px;
     }
@@ -185,7 +186,7 @@
         margin-bottom: var(--mb-20);
     }
     .inline__row {
-        max-height: 300px;
+        min-height: 300px;
         overflow: hidden;
     }
     .inline__column {
