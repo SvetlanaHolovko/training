@@ -1,0 +1,217 @@
+@media (min-width: 768px) {
+    .header h1 {
+        font-size: 32px;
+    }
+    .flex__content h2 {
+        font-size: 30px;
+    }
+    .flex__column {
+        max-width: calc(70% - 20px) ;
+        margin: 0 10px 20px;
+        padding: 0 10px;
+    }
+    .flex__item p {
+        font-size: 18px;
+    }
+    .flex__sidebar {
+        max-width: calc(30% - 20px);   
+        width: 100%;
+    }
+    .flex__sidebar-content {
+        min-height: 500px;
+    }
+    .flex__sidebar h3 {
+        font-size: 26px;
+    }
+    .flex__sidebar p {
+        font-size: 18px;
+    }
+
+    /* Float */
+    .float__content h2 {
+        font-size: 30px;
+    }
+    .float__column {
+        max-width: calc(70% - 20px) ;
+        margin: 0 10px 20px;
+        padding: 0 10px;
+    }
+    .float__item p {
+        font-size: 18px;
+    }
+    .float__sidebar {
+        float: right;
+        max-width: calc(30% - 20px);   
+        width: 100%;
+    }
+    .float__sidebar-content {
+        min-height: 500px;
+    }
+    .float__sidebar h3 {
+        font-size: 26px;
+    }
+    .float__sidebar p {
+        font-size: 18px;
+    }
+
+    /* Inline */
+    .inline {
+        max-height: 650px;
+    }
+    .inline__content {
+        position: relative;
+        display: block;
+        max-height: 650px;
+    }
+    .inline__content h2 {
+        font-size: 30px;
+    }
+    .inline__row {
+        min-height: 540px;
+    }
+    .inline__column {
+        position: absolute;
+        left: 15px;
+        max-width: calc(70% - 41px) ;
+        margin: 0 10px 20px;
+        padding: 0 10px;
+    }
+    .inline__item p {
+        font-size: 18px;
+    }
+    .inline__sidebar {
+        position: absolute;
+        right: 15px;
+        max-width: calc(30% - 29px);   
+        width: 100%;
+    }
+    .inline__sidebar-content {
+        min-height: 500px;
+    }
+    .inline__sidebar h3 {
+        font-size: 26px;
+    }
+    .inline__sidebar p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header h1 {
+        font-size: 38px;
+    }
+
+    /* Flex */
+    .flex__content {
+        padding: 40px 40px 20px;
+    }
+    .flex__content h2 {
+        font-size: 38px;
+    }
+    .flex__row {
+        justify-content: space-between;
+    }
+    .flex__column {
+        max-width: calc(80% - 20px);
+        justify-content: center;
+    }
+    .flex__item {
+        margin-bottom: var(--mb-10);
+        margin-left: -2px;
+        width: 50%;
+    }
+    .flex__item p {
+        font-size: 20px;    
+    }
+    .flex__sidebar {
+        max-width: calc(20% - 20px);
+        padding: 0 10px;
+    }
+    .flex__sidebar-content {
+        min-height: 250px;
+    }
+    .flex__sidebar h3 {
+        font-size: 30px;
+    }
+    .flex__sidebar p {
+        font-size: 20px;
+    }
+
+    /* Float */
+    .float__content {
+        padding: 40px 40px 20px;
+    }
+    .float__content h2 {
+        font-size: 38px;
+    }
+    .float__column {
+        max-width: calc(80% - 20px) ;
+    }
+    .float__item {
+        margin-bottom: var(--mb-10);
+        margin-left: -4px;
+        width: 50%;
+    }
+    .float__item p {
+        font-size: 20px;    
+    }
+    .float__sidebar {
+        max-width: calc(20% - 20px);
+        padding: 0 10px;
+    }
+    .float__sidebar-content {
+        min-height: 250px;
+    }
+    .float__sidebar h3 {
+        font-size: 30px;
+    }
+    .float__sidebar p {
+        font-size: 20px;
+    }
+
+    /* Inline */
+    .inline {
+        margin-bottom: var(--mb-40);
+        max-height: 420px;
+        overflow: hidden;
+    }
+    .inline__content {
+        padding: 40px 40px 20px;
+        max-height: 420px;
+        overflow: hidden;
+    }
+    .inline__content h2 {
+        font-size: 38px;
+        margin-bottom: var(--mb-20);
+    }
+    .inline__row {
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .inline__column {
+        left: 50px;
+        max-width: calc(80% - 100px) ;
+    }
+    .inline__item {
+        margin-bottom: var(--mb-10);
+        margin-left: -4px;
+        width: 50%;
+    }
+    .inline__item p {
+        font-size: 20px;    
+    }
+    .inline__sidebar {
+        right: 50px;
+        max-width: calc(20% - 40px);
+        padding: 0 10px;
+    }
+    .inline__sidebar-content {
+        min-height: 250px;
+    }
+    .inline__sidebar h3 {
+        font-size: 30px;
+    }
+    .inline__sidebar p {
+        font-size: 20px;
+    }
+}
