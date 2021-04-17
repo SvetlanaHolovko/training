@@ -33,6 +33,7 @@
         font-size: 30px;
     }
     .float__column {
+        float: left;
         max-width: calc(70% - 20px) ;
         margin: 0 10px 20px;
         padding: 0 10px;
@@ -118,7 +119,6 @@
     }
     .flex__item {
         margin-bottom: var(--mb-10);
-        margin-left: -2px;
         width: 50%;
     }
     .flex__item p {
@@ -149,8 +149,8 @@
         max-width: calc(80% - 20px) ;
     }
     .float__item {
+        float: right;
         margin-bottom: var(--mb-10);
-        margin-left: -4px;
         width: 50%;
     }
     .float__item p {
