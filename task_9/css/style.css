@@ -21,16 +21,16 @@ body {
     overflow: hidden;
 }
 
-.container {
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
 .header h1 {
     padding: 20px;
     text-align: center;
     font-size: 26px;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 
@@ -187,18 +187,19 @@ body {
 /* INLINE */
 .inline {
     margin-bottom: var(--mb-40);
-    max-height: 730px;
+    max-height: 727px;
 }
 
 .inline__content {
     background: var(--primary);
-    text-align: center;
     padding: 40px 5px 20px;
+    min-height: 727px;
 }
 
 .inline__content h2 {
     font-size: 24px;
     margin-bottom: var(--mb-20);
+    text-align: center;
 }
 
 .inline__row {
@@ -208,6 +209,7 @@ body {
 .inline__column {
     display: inline-block;
     vertical-align: middle;
+    overflow: hidden;
     padding: 10px 10px 0 10px;
     max-width: calc(100% - 20px);
     width: 100%;
@@ -217,6 +219,7 @@ body {
 .inline__item {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     background: var(--secondary);
     border: 1px solid #000;
     margin-bottom: -4px;

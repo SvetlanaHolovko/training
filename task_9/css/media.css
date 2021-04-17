@@ -58,33 +58,30 @@
 
     /* Inline */
     .inline {
-        max-height: 650px;
+        max-height: 659px;
     }
     .inline__content {
-        position: relative;
-        display: block;
         min-height: 659px;
     }
     .inline__content h2 {
         font-size: 30px;
     }
     .inline__row {
-        min-height: 540px;
+        min-height: 550px;
     }
     .inline__column {
-        position: absolute;
-        left: 15px;
-        max-width: calc(70% - 41px) ;
+        max-width: calc(70% - 22px) ;
         margin: 0 10px 20px;
         padding: 0 10px;
+        min-height: 498px;
     }
     .inline__item p {
         font-size: 18px;
     }
     .inline__sidebar {
-        position: absolute;
-        right: 15px;
-        max-width: calc(30% - 29px);   
+        display: inline-block;
+        vertical-align: top;
+        max-width: calc(30% - 22px);   
         width: 100%;
     }
     .inline__sidebar-content {
@@ -173,12 +170,12 @@
     /* Inline */
     .inline {
         margin-bottom: var(--mb-40);
-        max-height: 420px;
+        max-height: 418px;
         overflow: hidden;
     }
     .inline__content {
         padding: 40px 40px 20px;
-        min-height: 420px;
+        min-height: 418px;
         overflow: hidden;
     }
     .inline__content h2 {
@@ -190,8 +187,7 @@
         overflow: hidden;
     }
     .inline__column {
-        left: 50px;
-        max-width: calc(80% - 100px) ;
+        max-width: calc(80% - 22px) ;
     }
     .inline__item {
         margin-bottom: var(--mb-10);
@@ -202,8 +198,7 @@
         font-size: 20px;    
     }
     .inline__sidebar {
-        right: 50px;
-        max-width: calc(20% - 40px);
+        max-width: calc(20% - 22px);
         padding: 0 10px;
     }
     .inline__sidebar-content {
