@@ -63,7 +63,7 @@
     .inline__content {
         position: relative;
         display: block;
-        max-height: 650px;
+        min-height: 659px;
     }
     .inline__content h2 {
         font-size: 30px;
@@ -178,7 +178,7 @@
     }
     .inline__content {
         padding: 40px 40px 20px;
-        max-height: 420px;
+        min-height: 420px;
         overflow: hidden;
     }
     .inline__content h2 {
