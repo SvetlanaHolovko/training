@@ -1,0 +1,193 @@
+// _reset.scss
+@import "_reset";
+
+// Color palette
+$primary: #881b7d;
+$secondary: #5f5fb3;
+
+// Margin bottom
+$mb-40: 40px;
+$mb-20: 20px;
+$mb-10: 10px;
+$mb-5: 5px;
+
+%equal-heights {
+    display: flex;
+    flex-wrap: wrap;
+}
+%transition-color {
+    cursor: pointer;
+    transition: background-color .4s linear;
+}
+
+body {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#wrapper {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.flex {
+    margin-bottom: $mb-40;
+
+    &__content {
+        background: $primary;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5px 20px;
+
+        @media (min-width: 1024px) {
+            padding: 40px 40px 20px;
+        }
+
+        & h2 {
+            font-size: 24px;
+            margin-bottom: $mb-20;
+
+            @media (min-width: 768px) {
+                font-size: 30px;
+            }
+
+            @media (min-width: 1024px) {
+                font-size: 38px;
+            }
+        }
+    }
+
+    &__row {
+        @extend %equal-heights;
+        justify-content: center;
+        padding: 10px;
+
+        @media (min-width: 1024px) {
+            justify-content: space-between;
+        }
+    }
+
+    &__column {
+        @extend %equal-heights;
+        justify-content: space-between;
+        margin: 0 10px;
+        padding: 10px 10px 0 10px;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            max-width: calc(70% - 20px);
+            height: 100%;
+            margin: 0 10px 20px;
+            padding: 0 10px;
+        }
+
+        @media (min-width: 1024px) {
+            max-width: calc(80% - 20px);
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $secondary;
+        border: 1px solid #000;
+        margin-bottom: -1px;
+        padding: 15px;
+        width: 100%;
+        min-height: 250px;
+        @extend %transition-color;
+
+        @media (min-width: 1024px) {
+            margin-bottom: $mb-10;
+            width: 50%;
+        }
+
+        &:hover {
+            background-color: blue;
+        }
+
+        & p {
+            width: 100%;
+            margin-bottom: $mb-5; 
+
+            @media (min-width: 768px) {
+                font-size: 18px;
+            }
+            @media (min-width: 1024px) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__sidebar {
+        max-width: calc(100% - 20px);
+        text-align: left;
+        padding: 0 10px;
+        margin: 0 10px 10px;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            max-width: calc(30% - 20px);   
+            width: 100%;
+        }
+
+        @media (min-width: 1024px) {
+            max-width: calc(20% - 20px);
+            padding: 0 10px;
+        }
+
+        &-content {
+            border: 1px solid #000;
+            padding: 15px;
+            margin-bottom: $mb-20; 
+            @extend %transition-color;
+
+            @media (min-width: 768px) {
+                min-height: 500px; 
+            }
+
+            @media (min-width: 1024px) {
+                min-height: 250px;
+            }
+
+            &:hover {
+                background-color: fuchsia;
+            }
+        }
+
+        & h3 {
+            font-size: 20px;
+            margin-bottom: $mb-5;
+
+            @media (min-width: 768px) {
+                font-size: 26px;
+            }
+            @media (min-width: 1024px) {
+                font-size: 30px;
+            }
+        }
+
+        & p {
+            margin-bottom: $mb-5;
+
+            @media (min-width: 768px) {
+                font-size: 18px;
+            }
+            @media (min-width: 1024px) {
+                font-size: 20px;
+            }
+        }
+    }
+}
