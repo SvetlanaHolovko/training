@@ -1,0 +1,144 @@
+// _reset.scss
+@import "_reset";
+
+%equal-heights {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Color palette
+$primary: #f0b23f;
+$secondary: #000;
+$thirdary: #444;
+$circleColor1: #f00;
+$circleColor2: #ff0;
+$circleColor3: #0f0;
+
+// RED
+@keyframes traffic {
+    1% {
+        background: $circleColor1;
+    }
+    24% {
+        background: $circleColor1;
+    }
+    25% {
+        background: $thirdary;
+    }
+    100% {
+        background: $thirdary;
+    }
+}
+
+// YELLOW
+@keyframes traffic1 {
+    0% {
+        background: $thirdary;
+    }
+    25% {
+        background: $thirdary;
+    }
+    26% {
+        background: $circleColor2;
+    }
+    49% {
+        background: $circleColor2;
+    }
+    50% {
+        background: $thirdary;
+    }
+    75% {
+        background: $thirdary;
+    }
+    76% {
+        background: $circleColor2;
+    }
+    100% {
+        background: $circleColor2;
+    }
+}
+
+// GREEN
+@keyframes traffic2 {
+    0% {
+        background: $thirdary;
+    }
+    49% {
+        background: $thirdary;
+    }
+    50% {
+        background: $circleColor3;
+    }
+    75% {
+        background: $circleColor3;
+    }
+    76% {
+        background: $thirdary;
+    }
+    100% {
+        background: $thirdary;
+    }
+}
+
+body {
+    background-color: $primary;
+}
+
+#wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.color-change {
+    height: 100vh;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &__content {
+        @extend %equal-heights;
+
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
+    }
+
+    &__row {
+        @extend %equal-heights;
+
+        background: $secondary;
+        width: 230px;
+        min-height: 565px;
+        text-align: center;
+        border-radius: 5%;
+        padding: 50px;
+        align-content: space-between;
+        justify-content: center;
+    }
+
+    &__circle {
+        background:$thirdary;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+
+        &:nth-child(1) {
+            animation: traffic 12s linear infinite;
+        }
+
+        &:nth-child(2) {
+            animation: traffic1 12s linear infinite ;
+        }
+
+        &:nth-child(3) {
+            animation: traffic2 12s linear infinite;
+        }
+    }
+
+    &__foot {
+        background: $secondary;
+        width: 45px;
+        min-height: 150px;
+        text-align: center;
+    }
+}
