@@ -1,0 +1,132 @@
+// _reset.scss
+@import "_reset";
+
+%equal-heights {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Color palette
+$primary: #f0b23f;
+$secondary: #000;
+$thirdary: #444;
+$circleColor1: #f00;
+$circleColor2: #ff0;
+$circleColor3: #0f0;
+
+// RED
+@keyframes traffic {
+    0% {
+        background: $thirdary;
+    }
+    1% {
+        background: $circleColor1;
+    }
+    33% {
+        background: $circleColor1;
+    }
+    34% {
+        background: $thirdary;
+    }
+    100% {
+        background: $thirdary;
+    }
+}
+
+// YELLOW
+@keyframes traffic1 {
+    0% {
+        background: $thirdary;
+    }
+    32% {
+        background: $thirdary;
+    }
+    33% {
+        background: $circleColor2;
+    }
+    66% {
+        background: $circleColor2;
+    }
+    67% {
+        background: $thirdary;
+    }
+}
+
+// GREEN
+@keyframes traffic2 {
+    0% {
+        background: $thirdary;
+    }
+    66% {
+        background: $thirdary;
+    }
+    67% {
+        background: $circleColor3;
+    }
+    100% {
+        background: $circleColor3;
+    }
+}
+
+body {
+    background-color: $primary;
+}
+
+#wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.color-change {
+    height: 100vh;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &__content {
+        @extend %equal-heights;
+
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
+    }
+
+    &__row {
+        @extend %equal-heights;
+
+        background: $secondary;
+        width: 230px;
+        min-height: 565px;
+        text-align: center;
+        border-radius: 5%;
+        padding: 50px;
+        align-content: space-between;
+        justify-content: center;
+    }
+
+    &__circle {
+        background:$thirdary;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+
+        &:nth-child(1) {
+            animation: traffic 10s linear infinite;
+        }
+
+        &:nth-child(2) {
+            animation: traffic1 10s linear infinite ;
+        }
+
+        &:nth-child(3) {
+            animation: traffic2 10s linear infinite;
+        }
+    }
+
+    &__foot {
+        background: $secondary;
+        width: 45px;
+        min-height: 150px;
+        text-align: center;
+    }
+}
