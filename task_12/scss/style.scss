@@ -1,0 +1,533 @@
+// _reset.scss
+@import "_reset";
+@import "_fonts";
+@import "_iconsfont";
+
+// Color palette
+$colorBg: #5B4A02; 
+$colorNav: #7e6000; 
+$colorHvr: #382e02;
+$colorTxt: #F9F9F9;
+$colorBlck: #000000;
+
+body {
+	font-family:'BlowholeBBRegular';
+    background-color: $colorBg;  
+}
+
+#wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* header  */
+.header {
+	background-color: $colorBg;  
+    padding: 10px 10px 0;
+
+    &__top {
+        margin: 0 auto 10px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__logo img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.header__nav {
+    margin-bottom: 10px;
+    background-color: $colorNav; 
+    height: auto;
+
+    @media (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+
+.nav {  
+    padding: 20px 10px 0;
+
+    @media (min-width: 768px) {
+        padding: 45px 15px 0 50px;
+    }
+        
+    &-item {
+        padding: 0 10px;
+        margin-bottom: 15px;
+
+        @media (min-width: 768px) {
+            padding: 0 15px;
+        }
+
+        & .dropdown .nav-link {
+            background-color: $colorNav; 
+            border: none; 
+
+            &:active {
+                background-color: $colorNav; 
+            }
+        }
+
+        & .dropdown-menu {
+            background-color: $colorNav; 
+
+            & .dropdown-item {
+                color: $colorHvr;
+                font-size: 18px;
+
+                &:active {
+                    background-color: $colorTxt;
+                }
+
+                @media (min-width: 768px) {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    &-link {
+        font-size: 18px;
+        text-decoration: none;
+        color: $colorTxt;
+        transition: color .3s linear, text-decoration .3s linear;
+        padding: 0;
+
+        &:hover {
+            color: $colorHvr;
+            text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 30px;
+        }
+    }
+}
+
+/* Intro */
+.intro {
+    padding: 0 10px;
+	background-color: $colorTxt;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        width: 100%;
+        padding-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        
+        @media (min-width: 768px) {
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 992px) {
+            padding: 50px 20px 0;
+            margin-bottom: 60px;
+        }
+
+        & h1 {
+            font-size: 26px;
+            color: $colorHvr;
+
+            @media (min-width: 768px) {
+                font-size: 36px;
+            }
+        }
+    }
+
+    & .row {
+        margin: 10px 0;
+        border-bottom: 4px dotted $colorBlck;
+
+        @media (min-width: 768px) {
+            margin: 0 20px 0;
+        }
+    }
+}
+
+.card-item {
+    padding: 0 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+    @media (min-width: 768px) {
+        width: 50%;
+        margin-bottom: 45px;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.intro__text {
+    width: 100%;
+    padding: 10px 20px 0;
+
+    @media (min-width: 992px) {
+        padding: 40px 20px 0;
+    }
+
+    & h2 {
+        color: $colorHvr;
+        padding: 0 10px;
+        margin-bottom: 0;
+        text-align: left;
+        font-size: 20px;
+
+        @media (min-width: 768px) {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        @media (min-width: 992px) {
+            padding: 10px;
+        }
+    }
+
+    & p {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: normal;
+        color: $colorBlck;
+        padding: 10px;
+        opacity: 0.9;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+}
+
+/* carousel */
+.carousel {
+    padding: 0 10px;
+	background-color: $colorTxt;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        width: 100%;
+        padding-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        
+        @media (min-width: 768px) {
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 992px) {
+            padding: 50px 20px 0;
+            margin-bottom: 60px;
+        }
+
+        & h2 {
+            font-size: 26px;
+            color: $colorHvr;
+
+            @media (min-width: 768px) {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+.carousel .slide {
+    margin: 0 auto;
+    padding: 0 20px 30px;
+    width: 100%;
+
+    & img {
+        max-height: 250px;
+
+        @media (min-width: 768px) {
+            max-height: 400px;
+        }
+    }
+}
+
+/* tabs */
+.tabs {
+    margin: 0 auto;
+    padding: 0 20px 30px;
+    width: 100%;
+
+    & .nav-tabs {
+        font-size: 20px;
+        letter-spacing: 2px;
+        background-color: $colorNav; 
+        color: $colorTxt;
+        transition: border .3s linear, text-decoration .3s linear;
+
+        @media (min-width: 768px) {
+            font-size: 26px;
+        }
+
+        & .active {
+            background-color: $colorNav; 
+            color: $colorHvr;
+        }
+    }
+}
+
+.tab-content {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $colorHvr;
+
+    @media (min-width: 992px) {
+        padding: 20px;
+    }
+}
+
+.tab-pane {
+    margin: 0 10px;
+
+    @media (min-width: 992px) {
+        margin: 0 20px;
+    }
+
+    & p {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: normal;
+        color: $colorBlck;
+        padding: 10px;
+        background-color: $colorNav; 
+
+        @media (min-width: 768px) {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    }
+}
+
+/* collapse */
+.collapses {
+    padding: 0 10px;
+	background-color: $colorTxt;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        width: 100%;
+        padding-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        
+        @media (min-width: 768px) {
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 992px) {
+            padding: 50px 20px 0;
+            margin-bottom: 60px;
+        }
+
+        & h2 {
+            font-size: 26px;
+            color: $colorHvr;
+
+            @media (min-width: 768px) {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+.accordion {
+    margin: 0 auto;
+    padding: 0 20px 30px;
+    width: 100%;   
+}
+
+.accordion .card {
+    background-color: $colorNav; 
+    color: $colorBlck; 
+
+    & button {
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: $colorTxt;
+        transition: color .3s linear;
+
+        &:hover {
+            color: $colorHvr;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 26px;
+        }
+    }
+}
+
+.card-body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
+
+.collapses-table {
+    margin: 0 auto;
+    padding: 0 5px 5px;
+    width: 100%;  
+
+    @media (min-width: 768px) {
+        padding: 0 20px 30px;
+    }
+}
+
+.table {
+    background-color: $colorNav; 
+    color: $colorTxt;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    @media (min-width: 576px) {
+        font-size: 16px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+
+    &__tr {
+        cursor: pointer;
+        transition: color .3s linear;
+
+        &:hover {
+            color: $colorHvr;
+        }
+    }
+}
+
+/* footer */
+.footer {
+    overflow: hidden;
+    background-color: $colorNav; 
+
+    & .row {
+        padding-left: 5px;
+        padding-top: 20px;
+
+        @media (min-width: 768px) {
+            padding-left: 15px;
+        }
+
+        @media (min-width: 992px) {
+            padding: 45px 15px 0 50px;
+        }
+    }
+
+    & a {
+        font-size: 20px;
+        text-decoration: none;
+        color :$colorTxt;
+        padding: 0 10px;
+        margin-bottom: 15px;
+        transition: color .3s linear;
+
+        &:hover {
+            color: $colorHvr;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+
+        @media (min-width: 992px) {
+            padding: 0 15px;
+            font-size: 30px;
+        }
+    } 
+}
+
+/* Modal */
+.modal-content {
+    background-color: $colorNav; 
+
+    & h5 {
+        color: $colorHvr;
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+}
+
+.modal-body {
+    color: $colorTxt;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+
+    & .form-control {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.2;
+        color: $colorHvr;
+        border: none;
+        margin-bottom: 1rem;
+        max-height: 250px;
+    }
+}
+
+.modal-footer .btn {
+    background-color: $colorTxt;
+    color: $colorHvr;
+    transition: color .3s linear, background-color .3s linear;
+
+    &:hover {
+        background-color: $colorHvr;
+        color: $colorTxt;
+    }
+}
