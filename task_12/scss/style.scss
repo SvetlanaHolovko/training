@@ -24,20 +24,20 @@ body {
 
 .container {
     width: 100%;
-    max-width: 960px;
+    max-width: 60rem;
     margin: 0 auto;
 }
 
 /* header  */
 .header {
 	background-color: $colorBg;  
-    padding: 10px 10px 0;
+    padding: .6rem .6rem 0;
 
     &__top {
-        margin: 0 auto 10px;
+        margin: 0 auto .6rem;
 
-        @media (min-width: 768px) {
-            margin-bottom: 20px;
+        @media (min-width: 48rem) {
+            margin-bottom: 1.25rem;
         }
     }
 
@@ -49,28 +49,28 @@ body {
 }
 
 .header__nav {
-    margin-bottom: 10px;
+    margin-bottom: .6rem;
     background-color: $colorNav; 
     height: auto;
 
-    @media (min-width: 768px) {
-        margin-bottom: 20px;
+    @media (min-width: 48rem) {
+        margin-bottom: 1.25rem;
     }
 }
 
 .nav {  
-    padding: 20px 10px 0;
+    padding: 1.25rem .6rem 0;
 
-    @media (min-width: 768px) {
-        padding: 45px 15px 0 50px;
+    @media (min-width: 48rem) {
+        padding: 2.8rem .9rem 0 3.1rem;
     }
         
     &-item {
-        padding: 0 10px;
-        margin-bottom: 15px;
+        padding: 0 .6rem;
+        margin-bottom: 0.9rem;
 
-        @media (min-width: 768px) {
-            padding: 0 15px;
+        @media (min-width: 48rem) {
+            padding: 0 .9rem;
         }
 
         & .dropdown .nav-link {
@@ -87,21 +87,21 @@ body {
 
             & .dropdown-item {
                 color: $colorHvr;
-                font-size: 18px;
+                font-size: 1.1rem;
 
                 &:active {
                     background-color: $colorTxt;
                 }
 
-                @media (min-width: 768px) {
-                    font-size: 24px;
+                @media (min-width: 48rem) {
+                    font-size: 1.5rem;
                 }
             }
         }
     }
 
     &-link {
-        font-size: 18px;
+        font-size: 1.1rem;
         text-decoration: none;
         color: $colorTxt;
         transition: color .3s linear, text-decoration .3s linear;
@@ -112,76 +112,76 @@ body {
             text-decoration: underline;
         }
 
-        @media (min-width: 768px) {
-            font-size: 24px;
+        @media (min-width: 48rem) {
+            font-size: 1.5rem;
         }
 
-        @media (min-width: 992px) {
-            font-size: 30px;
+        @media (min-width: 62rem) {
+            font-size: 1.88rem;
         }
     }
 }
 
 /* Intro */
 .intro {
-    padding: 0 10px;
+    padding: 0 .6rem;
 	background-color: $colorTxt;
-    margin-bottom: 10px;
+    margin-bottom: .6rem;
 
-    @media (min-width: 768px) {
-        margin-bottom: 20px;
+    @media (min-width: 48rem) {
+        margin-bottom: 1.25rem;
     }
 
     &__title {
         width: 100%;
-        padding-top: 20px;
-        margin-bottom: 10px;
+        padding-top: 1.25rem;
+        margin-bottom: .6rem;
         text-align: center;
         
-        @media (min-width: 768px) {
-            padding-top: 20px;
-            margin-bottom: 30px;
+        @media (min-width: 48rem) {
+            padding-top: 1.25rem;
+            margin-bottom: 1.88rem;
         }
 
-        @media (min-width: 992px) {
-            padding: 50px 20px 0;
-            margin-bottom: 60px;
+        @media (min-width: 62rem) {
+            padding: 3.1rem 1.25rem 0;
+            margin-bottom: 3.75rem;
         }
 
         & h1 {
-            font-size: 26px;
+            font-size: 1.6rem;
             color: $colorHvr;
 
-            @media (min-width: 768px) {
-                font-size: 36px;
+            @media (min-width: 48rem) {
+                font-size: 2.25rem;
             }
         }
     }
 
     & .row {
-        margin: 10px 0;
-        border-bottom: 4px dotted $colorBlck;
+        margin: .6rem 0;
+        border-bottom: .25rem dotted $colorBlck;
 
-        @media (min-width: 768px) {
-            margin: 0 20px 0;
+        @media (min-width: 48rem) {
+            margin: 0 1.25rem 0;
         }
     }
 }
 
 .card-item {
-    padding: 0 20px;
+    padding: 0 1.25rem;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     cursor: pointer;
     transition: transform 0.2s linear;
 
     &:hover {
-        transform: translateY(-10px);
+        transform: translateY(-.6rem);
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 48rem) {
         width: 50%;
-        margin-bottom: 45px;
+        margin-bottom: 2.8rem;
     }
 
     & img {
@@ -193,40 +193,40 @@ body {
 
 .intro__text {
     width: 100%;
-    padding: 10px 20px 0;
+    padding: .6rem 1.25rem 0;
 
-    @media (min-width: 992px) {
-        padding: 40px 20px 0;
+    @media (min-width: 62rem) {
+        padding: 2.5rem 1.25rem 0;
     }
 
     & h2 {
         color: $colorHvr;
-        padding: 0 10px;
+        padding: 0 .6rem;
         margin-bottom: 0;
         text-align: left;
-        font-size: 20px;
+        font-size: 1.25rem;
 
-        @media (min-width: 768px) {
-            font-size: 30px;
-            margin-bottom: 5px;
+        @media (min-width: 48rem) {
+            font-size: 1.88rem;
+            margin-bottom: .3rem;
         }
 
-        @media (min-width: 992px) {
-            padding: 10px;
+        @media (min-width: 62rem) {
+            padding: .6rem;
         }
     }
 
     & p {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        font-size: 14px;
+        font-size: 1rem;
         line-height: 1.2;
         font-weight: normal;
         color: $colorBlck;
-        padding: 10px;
-        opacity: 0.9;
+        padding: .6rem;
+        opacity: .9;
 
-        @media (min-width: 768px) {
-            font-size: 16px;
+        @media (min-width: 48rem) {
+            font-size: 1.25rem;
             line-height: 1.5;
         }
     }
@@ -234,36 +234,36 @@ body {
 
 /* carousel */
 .carousel {
-    padding: 0 10px;
+    padding: 0 .6rem;
 	background-color: $colorTxt;
-    margin-bottom: 10px;
+    margin-bottom: .6rem;
 
-    @media (min-width: 768px) {
-        margin-bottom: 20px;
+    @media (min-width: 48rem) {
+        margin-bottom: 1.25rem;
     }
 
     &__title {
         width: 100%;
-        padding-top: 20px;
-        margin-bottom: 10px;
+        padding-top: 1.25rem;
+        margin-bottom: .6rem;
         text-align: center;
         
-        @media (min-width: 768px) {
-            padding-top: 20px;
-            margin-bottom: 30px;
+        @media (min-width: 48rem) {
+            padding-top: 1.25rem;
+            margin-bottom: 1.88rem;
         }
 
-        @media (min-width: 992px) {
-            padding: 50px 20px 0;
-            margin-bottom: 60px;
+        @media (min-width: 62rem) {
+            padding: 3.1rem 1.25rem 0;
+            margin-bottom: 3.75rem;
         }
 
         & h2 {
-            font-size: 26px;
+            font-size: 1.6rem;
             color: $colorHvr;
 
-            @media (min-width: 768px) {
-                font-size: 36px;
+            @media (min-width: 48rem) {
+                font-size: 2.25rem;
             }
         }
     }
@@ -271,14 +271,14 @@ body {
 
 .carousel .slide {
     margin: 0 auto;
-    padding: 0 20px 30px;
+    padding: 0 1.25rem 1.88rem;
     width: 100%;
 
     & img {
-        max-height: 250px;
+        max-height: 23.1rem;
 
-        @media (min-width: 768px) {
-            max-height: 400px;
+        @media (min-width: 48rem) {
+            max-height: 25rem;
         }
     }
 }
@@ -286,18 +286,18 @@ body {
 /* tabs */
 .tabs {
     margin: 0 auto;
-    padding: 0 20px 30px;
+    padding: 0 1.25rem 1.88rem;
     width: 100%;
 
     & .nav-tabs {
-        font-size: 20px;
-        letter-spacing: 2px;
+        font-size: 1.25rem;
+        letter-spacing: .125rem;
         background-color: $colorNav; 
         color: $colorTxt;
         transition: border .3s linear, text-decoration .3s linear;
 
-        @media (min-width: 768px) {
-            font-size: 26px;
+        @media (min-width: 48rem) {
+            font-size: 1.6rem;
         }
 
         & .active {
@@ -309,32 +309,32 @@ body {
 
 .tab-content {
     width: 100%;
-    padding: 10px;
-    border: 1px solid $colorHvr;
+    padding: .6rem;
+    border: .06rem solid $colorHvr;
 
-    @media (min-width: 992px) {
-        padding: 20px;
+    @media (min-width: 62rem) {
+        padding: 1.25rem;
     }
 }
 
 .tab-pane {
-    margin: 0 10px;
+    margin: 0 .6rem;
 
-    @media (min-width: 992px) {
-        margin: 0 20px;
+    @media (min-width: 62rem) {
+        margin: 0 1.25rem;
     }
 
     & p {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.2;
         font-weight: normal;
         color: $colorBlck;
-        padding: 10px;
+        padding: .6rem;
         background-color: $colorNav; 
 
-        @media (min-width: 768px) {
-            font-size: 18px;
+        @media (min-width: 48rem) {
+            font-size: 1.1rem;
             line-height: 1.5;
         }
     }
@@ -342,36 +342,36 @@ body {
 
 /* collapse */
 .collapses {
-    padding: 0 10px;
+    padding: 0 .6rem;
 	background-color: $colorTxt;
-    margin-bottom: 10px;
+    margin-bottom: .6rem;
 
-    @media (min-width: 768px) {
-        margin-bottom: 20px;
+    @media (min-width: 48rem) {
+        margin-bottom: 1.25rem;
     }
 
     &__title {
         width: 100%;
-        padding-top: 20px;
-        margin-bottom: 10px;
+        padding-top: 1.25rem;
+        margin-bottom: .6rem;
         text-align: center;
         
-        @media (min-width: 768px) {
-            padding-top: 20px;
-            margin-bottom: 30px;
+        @media (min-width: 48rem) {
+            padding-top: 1.25rem;
+            margin-bottom: 1.88rem;
         }
 
-        @media (min-width: 992px) {
-            padding: 50px 20px 0;
-            margin-bottom: 60px;
+        @media (min-width: 62rem) {
+            padding: 3.1rem 1.25rem 0;
+            margin-bottom: 3.75rem;
         }
 
         & h2 {
-            font-size: 26px;
+            font-size: 1.6rem;
             color: $colorHvr;
 
-            @media (min-width: 768px) {
-                font-size: 36px;
+            @media (min-width: 48rem) {
+                font-size: 2.25rem;
             }
         }
     }
@@ -379,7 +379,7 @@ body {
 
 .accordion {
     margin: 0 auto;
-    padding: 0 20px 30px;
+    padding: 0 1.25rem 1.88rem;
     width: 100%;   
 }
 
@@ -388,8 +388,8 @@ body {
     color: $colorBlck; 
 
     & button {
-        font-size: 20px;
-        letter-spacing: 3px;
+        font-size: 1.25rem;
+        letter-spacing: .19rem;
         color: $colorTxt;
         transition: color .3s linear;
 
@@ -397,46 +397,46 @@ body {
             color: $colorHvr;
         }
 
-        @media (min-width: 768px) {
-            font-size: 26px;
+        @media (min-width: 48rem) {
+            font-size: 1.6rem;
         }
     }
 }
 
 .card-body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.2;
 
-    @media (min-width: 768px) {
-        font-size: 18px;
+    @media (min-width: 48rem) {
+        font-size: 1.1rem;
         line-height: 1.5;
     }
 }
 
 .collapses-table {
     margin: 0 auto;
-    padding: 0 5px 5px;
+    padding: 0 .3rem .3rem;
     width: 100%;  
 
-    @media (min-width: 768px) {
-        padding: 0 20px 30px;
+    @media (min-width: 48rem) {
+        padding: 0 1.25rem 1.88rem;
     }
 }
 
 .table {
     background-color: $colorNav; 
     color: $colorTxt;
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: 1rem;
+    letter-spacing: .06rem;
 
     @media (min-width: 576px) {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
-    @media (min-width: 768px) {
-        font-size: 26px;
-        letter-spacing: 2px;
+    @media (min-width: 48rem) {
+        font-size: 1.6rem;
+        letter-spacing: .125rem;
     }
 
     &__tr {
@@ -455,37 +455,37 @@ body {
     background-color: $colorNav; 
 
     & .row {
-        padding-left: 5px;
-        padding-top: 20px;
+        padding-left: .3rem;
+        padding-top: 1.25rem;
 
-        @media (min-width: 768px) {
-            padding-left: 15px;
+        @media (min-width: 48rem) {
+            padding-left: .9rem;
         }
 
-        @media (min-width: 992px) {
-            padding: 45px 15px 0 50px;
+        @media (min-width: 62rem) {
+            padding: 2.8rem .9rem 0 3.1rem;
         }
     }
 
     & a {
-        font-size: 20px;
+        font-size: 1.25rem;
         text-decoration: none;
         color :$colorTxt;
-        padding: 0 10px;
-        margin-bottom: 15px;
+        padding: 0 .6rem;
+        margin-bottom: .9rem;
         transition: color .3s linear;
 
         &:hover {
             color: $colorHvr;
         }
 
-        @media (min-width: 768px) {
-            font-size: 24px;
+        @media (min-width: 48rem) {
+            font-size: 1.5rem;
         }
 
-        @media (min-width: 992px) {
-            padding: 0 15px;
-            font-size: 30px;
+        @media (min-width: 62rem) {
+            padding: 0 .9rem;
+            font-size: 1.88rem;
         }
     } 
 }
@@ -496,28 +496,28 @@ body {
 
     & h5 {
         color: $colorHvr;
-        font-size: 26px;
-        letter-spacing: 2px;
+        font-size: 1.6rem;
+        letter-spacing: .125rem;
     }
 }
 
 .modal-body {
     color: $colorTxt;
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 1.25rem;
+    letter-spacing: .125rem;
 
-    @media (min-width: 768px) {
-        font-size: 24px;
+    @media (min-width: 48rem) {
+        font-size: 1.5rem;
     }
 
     & .form-control {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.2;
         color: $colorHvr;
         border: none;
         margin-bottom: 1rem;
-        max-height: 250px;
+        max-height: 23.1rem;
     }
 }
 
