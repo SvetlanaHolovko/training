@@ -283,12 +283,19 @@ body {
     }
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 22%;
+.carousel-control-prev {
+    left: 10px;
 
     @media (min-width: 48rem) {
-        width: 15%;
+        left: 0px;
+    }
+}
+
+.carousel-control-next {
+    right: 10px;
+
+    @media (min-width: 48rem) {
+        right: 0px;
     }
 }
 

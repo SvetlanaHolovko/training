@@ -441,15 +441,23 @@ body {
   }
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  width: 22%;
+.carousel-control-prev {
+  left: 10px;
 }
 
 @media (min-width: 48rem) {
-  .carousel-control-prev,
+  .carousel-control-prev {
+    left: 0px;
+  }
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+@media (min-width: 48rem) {
   .carousel-control-next {
-    width: 15%;
+    right: 0px;
   }
 }
 
