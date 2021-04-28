@@ -441,6 +441,18 @@ body {
   }
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  width: 22%;
+}
+
+@media (min-width: 48rem) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 15%;
+  }
+}
+
 /* tabs */
 .tabs {
   margin: 0 auto;
