@@ -1,8 +1,11 @@
 # training - Учебный проект Hillel
+
 ### Выполнил проект: Светлана Головко
+
 ## Технологии
+
 - HTML
 - CSS
-- SCSS
-- Bootstrap
-- SASS
+- SCSS (task_10)
+- SASS (task_10)
+- Bootstrap (task_12)
