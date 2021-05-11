@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 @import "_reset";
 
@@ -8,7 +8,7 @@ $red: #ff3c2d;
 $grey: #f6f6f6;
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -42,7 +42,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     color: $white;
-    transition: background-color .2s linear;
+    transition: background-color 0.2s linear;
 
     @media (min-width: 768px) {
         font-size: 18px;
@@ -104,7 +104,7 @@ span {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        
+
         @media (min-width: 768px) {
             justify-content: space-between;
         }
@@ -166,7 +166,7 @@ span {
             color: $black;
             font-size: 16px;
             line-height: 1.75;
-            transition: color .2s linear, text-decoration .2s linear;
+            transition: color 0.2s linear, text-decoration 0.2s linear;
 
             @media (min-width: 768px) {
                 margin-bottom: 0;
@@ -205,16 +205,16 @@ span {
         line-height: 1.7;
         border-radius: 3px;
         cursor: pointer;
-        transition: background-color .2s linear;
-        
+        transition: background-color 0.2s linear;
+
         @media (min-width: 768px) {
             margin-bottom: 10px;
         }
-        
+
         @media (min-width: 1200px) {
             margin-bottom: -2px;
         }
-        
+
         @media (min-width: 1920px) {
             margin-left: 162px;
         }
@@ -251,20 +251,20 @@ span {
 .intro {
     position: relative;
     text-align: center;
-    background-image: url('../assets/header-bg.jpg');
+    background-image: url("../assets/header-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: 99;
     padding-bottom: 60px;
     margin-bottom: 20px;
-    
+
     @media (min-width: 768px) {
         padding-bottom: 40px;
         margin-bottom: 50px;
         text-align: left;
     }
-    
+
     @media (min-width: 1024px) {
         min-height: 511px;
         background-position: 36% 50%;
@@ -292,7 +292,7 @@ span {
             padding-top: 64px;
             padding-left: 0px;
         }
-        
+
         h1 {
             position: relative;
             font-size: 35px;
@@ -344,8 +344,8 @@ span {
         line-height: 1.556;
         border-radius: 3px;
         cursor: pointer;
-        transition: background-color .2s linear;
-        
+        transition: background-color 0.2s linear;
+
         @media (min-width: 768px) {
             margin-left: 5px;
             font-size: 18px;
@@ -360,7 +360,7 @@ span {
 .sessions {
     text-align: center;
     color: $white;
-    
+
     img {
         margin: 0 auto 10px;
         max-height: 25px;
@@ -399,10 +399,9 @@ span {
 
         @media (min-width: 768px) {
             margin-bottom: 60px;
-            
         }
 
-        @media (min-width:1200px) {
+        @media (min-width: 1200px) {
             max-width: 430px;
             margin-bottom: 78px;
             padding-left: 22px;
@@ -412,7 +411,7 @@ span {
             font-size: 16px;
             text-transform: capitalize;
             position: relative;
-            border-bottom: 1px solid rgba($white, .2);
+            border-bottom: 1px solid rgba($white, 0.2);
             padding: 9px 0 9px calc(30px + 2vw);
             margin-bottom: 20px;
 
@@ -431,7 +430,7 @@ span {
                 counter-increment: section;
                 content: counter(section);
                 font-size: 56px;
-                line-height: .66;
+                line-height: 0.66;
                 position: absolute;
                 right: 95%;
                 bottom: 0;
@@ -443,8 +442,8 @@ span {
 
                 @media (min-width: 768px) {
                     font-size: 79px;
-                    line-height: .66;
-                    line-height: .68;
+                    line-height: 0.66;
+                    line-height: 0.68;
                     right: 95%;
                 }
             }
@@ -452,7 +451,6 @@ span {
     }
 
     &__row {
-        
         @media (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
@@ -481,8 +479,8 @@ span {
 
             ul {
                 li {
-                    border-bottom-color: rgba(#222, .15);
-                    
+                    border-bottom-color: rgba(#222, 0.15);
+
                     &:before {
                         color: #ccc;
                     }
@@ -493,10 +491,170 @@ span {
 
     &__btn {
         padding: 10px 15px;
-        
+
         @media (min-width: 768px) {
             font-size: 18px;
             line-height: 1.556;
         }
     }
 }
+
+.blog {
+    margin: 0;
+    padding: 30px 0 40px;
+    color: $black;
+
+    @media (min-width: 1024px) {
+        padding: 85px 0 120px;
+        margin-left: 19px;
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 1230px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 20px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 1024px) {
+            margin-bottom: 71px;
+        }
+
+        h2 {
+            font-size: 30px;
+            line-height: 1.1;
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-bottom: 10px;
+
+            @media (min-width: 768px) {
+                font-size: 40px;
+            }
+
+            @media (min-width: 1024px) {
+                font-size: 50px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.77;
+        }
+    }
+
+    &__row {
+        margin-bottom: 10px;
+
+        @media (min-width: 768px) {
+            display: flex;
+            margin: 0 -10px;
+        }
+    }
+
+    &__col {
+        padding: 0 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 1024px) {
+            flex: 0 1 33.333%;
+        }
+    }
+
+    &__item {
+        background: $grey;
+        width: 100%;
+        max-width: 385px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 1024px) {
+            margin-bottom: 56px;
+        }
+
+        &-photo {
+            margin-bottom: 23px;
+        }
+
+        p {
+            flex: 1 1 auto;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 1.4;
+            text-align: left;
+            padding: 0 25px;
+            margin-bottom: 10px;
+            
+
+            @media (min-width: 768px) {
+                font-size: 18px;
+            }
+
+            @media (min-width: 1024px) {
+                font-size: 20px;
+                margin-bottom: 20px;
+                word-spacing: -1px;
+            }
+        }
+    }
+
+    &__stat {
+        padding: 0 10px 0 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        h4 {
+            display: inline-block;
+            vertical-align: middle;
+            color: $red;
+            font-size: 16px;
+            line-height: 1.75;
+            font-weight: 400;
+            padding: 5px 8px;
+
+            @media (min-width: 1024px) {
+                padding: 24px 8px;
+            }
+        }
+
+        time {
+            color: #ababab;
+            font-size: 16px;
+            line-height: 1.75;
+            font-weight: 400;
+            padding: 5px 9px;
+
+            @media (min-width: 1024px) {
+                padding: 23px 9px;
+            }
+        }
+    }
+
+    &__footer {
+        text-align: center;
+    }
+}
+
+
