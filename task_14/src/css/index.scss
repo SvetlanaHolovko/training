@@ -714,7 +714,7 @@ body {
     }
 
     &__stat {
-        padding: 0 10px 0 15px;
+        padding: 0 10px 5px 15px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -732,14 +732,15 @@ body {
         }
     }
 
-    &__commit {
+    &__commit a {
         display: inline-block;
         vertical-align: middle;
-        color: $red;
         font-size: 16px;
         line-height: 1.75;
         font-weight: 400;
         padding: 5px 8px;
+        text-decoration: none;
+            color: $red;
 
         @media (min-width: 1200px) {
             padding: 22px 12px;
