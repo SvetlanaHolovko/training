@@ -40,7 +40,7 @@ function js() {
 }
 
 function images() {
-    return src('src/assets/*')
+    return src('src/assets/**/*')
         .pipe(imagemin())
         .pipe(dest('build/assets'))
         .pipe(browserSync.stream());
@@ -57,7 +57,7 @@ function dev() {
     watch('src/*.html', html);
     watch('src/css/*.scss', css);
     watch('src/js/**/*.js', js);
-    watch('src/assets/*', images);
+    watch('src/assets/**/*', images);
 }
 
 function build() {

@@ -1,0 +1,124 @@
+
+.headshot {
+    position: relative;
+    background: url("../assets/headshot.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 30px 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 99;
+    
+    @media (min-width: 1200px) {
+        min-height: 401px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: $black;
+        opacity: 0.6;
+        left: 0px;
+        top: 0px;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    &__mark {
+        border: 2px solid rgba($white, .149);;
+        left: 0;
+        top: 32px;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        max-width: 1888px;
+        height: 360px;
+        position: relative;
+        z-index: 99;
+
+        @media (min-width: 768px) {
+            top: 32px;
+        }
+
+        @media (min-width: 1200px) {
+            min-height: 320px;
+            position: absolute;
+            top: 19px;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 1590px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__row {
+        position: relative;
+        z-index: 99;
+
+        @media (min-width: 1200px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__left {
+        text-align: center;
+        padding-top: 60px;
+
+        @media (min-width: 1200px) {
+            width: 70%;
+            padding: 116px 0 10px 0;
+        }
+        
+        h2 {
+            font-size: 30px;
+            line-height: 1.1;
+            font-weight: 600;
+            color: $white;
+            position: relative;
+            z-index: 999;
+            margin-bottom: 40px;
+            
+            @media (min-width: 768px) {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 50px;
+                text-align: left;
+            }
+        }
+    }
+
+    &__right {
+        text-align: center;
+        margin-bottom: 10px;
+        padding-top: 30px;
+
+        @media (min-width: 1200px) {
+            padding-top: 79px;
+            padding-left: 20px;
+            margin-bottom: 0;
+            text-align: left;
+        }
+    }
+
+    &__btn {
+        padding: 8px 68px;
+        margin-bottom: 5px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -18,7 +18,7 @@
 
     @media (min-width: 1024px) {
         min-height: 511px;
-        background-position: 36% 50%;
+        background-position: 16% 50%;
         margin-bottom: 100px;
     }
 
@@ -41,7 +41,7 @@
 
         @media (min-width: 768px) {
             padding-top: 64px;
-            padding-left: 0px;
+            padding-left: 6px;
         }
 
         h1 {
@@ -112,7 +112,7 @@
     }
 
     &__btn {
-        padding: 9px 34px;
+        padding: 9px 35px;
 
         @media (min-width: 768px) {
             margin-left: 5px;
