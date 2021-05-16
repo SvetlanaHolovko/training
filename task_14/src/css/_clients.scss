@@ -1,0 +1,190 @@
+
+.clients {
+    margin: 0;
+    padding: 30px 0 30px;
+    color: $white;
+    background-color: $black;
+
+    @media (min-width: 768px) {
+        padding: 50px 0 80px;
+    }
+    @media (min-width: 1200px) {
+        padding: 91px 0 164px;
+    }
+
+    &__container {
+        width: 100%;
+        max-width: 1590px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 20px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 1200px) {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 30px;
+            line-height: 1.1;
+            font-weight: 600;
+            margin-bottom: 12px;
+
+            @media (min-width: 768px) {
+                font-size: 40px;
+            }
+
+            @media (min-width: 1024px) {
+                font-size: 50px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.77;
+            margin-left: 4px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        @media (min-width: 768px) {
+            margin: 0 -22px;
+        }
+    }
+
+    &__col {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 22px;
+        width: 100%;
+        flex: 1 1 auto;
+
+        @media (min-width: 768px) {
+            width: 50%;
+            flex: 1 1 auto;
+        }
+
+        @media (min-width: 1024px) {
+            flex: 0 1 33.333%;
+        }
+    }
+
+    &__item {
+        width: 100%;
+        margin-bottom: 20px;
+
+        @media (min-width: 1200px) {
+            margin-bottom: 26px;
+        }
+
+        &-photo {
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+
+    &__rating {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 10px;
+
+        @media (min-width: 768px) {
+            padding: 20px 2px;
+        }
+
+        h4 {
+            line-height: 1.75;
+            text-transform: uppercase;
+            font-weight: 400;
+
+            @media (min-width: 768px) {
+                font-size: 16px;
+                word-spacing: 7px;
+            }
+        }
+
+        .stars {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 20px;
+                color: $red;
+                position: relative;
+                width: 16px;
+                margin-left: 2px;
+                transition: all .8s linear;
+            }
+
+            & > li:hover:before,
+            & > li:hover ~ li:before,
+            & > li.active:before,
+            & > li.active ~ li:before {
+                content: "\2605";
+                position: absolute;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__bottom{
+        padding: 10px 30px;
+
+        @media (min-width: 768px) {
+            padding: 11px 44px;
+        }
+
+        p {
+            position: relative;
+            line-height: 1.778;
+            font-style: italic;
+            z-index: 99;
+
+            @media (min-width: 768px) {
+                font-size: 18px;
+                padding: 0;
+            }
+
+            &:before {
+                content: "\201C";
+                font-family: "Trebuchet MS", sans-serif;
+                display: inline-block;
+                color: #393939;
+                position: absolute;
+                font-size: 120px;
+                top: -72px;
+                left: -42px;
+                vertical-align: bottom;
+                z-index: -1;
+
+                @media (min-width: 768px) {
+                    font-size: 150px;
+                    top: -90px;
+                    left: -58px;
+                }
+
+                @media (min-width: 1024px) {
+                    font-size: 179px;
+                    top: -107px;
+                    left: -70px;
+                }
+            }
+        }
+    }
+}

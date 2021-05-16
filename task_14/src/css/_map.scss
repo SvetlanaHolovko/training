@@ -1,0 +1,124 @@
+
+.map {
+    background-image: url("../assets/map.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+        text-align: left;
+    }
+
+    @media (min-width: 1200px) {
+        min-height: 560px;
+        background-position: 45% 0%;
+    }
+
+    &__row {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &__col {
+        padding: 60px 15px 10px;
+
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+
+        @media (min-width: 1200px) {
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+
+        @media (min-width: 1400px) {
+            padding-top: 160px;
+            padding-bottom: 150px;
+        }
+    }
+
+    &__studio {
+        background: $white;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 10px;
+
+        @media (min-width: 1200px) {
+            max-width: 700px;  
+            text-align: left;
+            margin-left: 158px;
+        }
+
+        h2 {
+            padding: 40px 34px 0;
+            margin-bottom: 11px;
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 1.1;
+
+            @media (min-width: 768px) {
+                font-size: 34px;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 50px;
+            }
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 1.778;
+
+            @media (min-width: 768px) {
+                font-size: 16px;
+                padding: 0 37px;
+                margin-bottom: 20px;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 18px;
+                padding: 0 37px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__search {
+        display: inline-block;
+        font-size: 15px;
+        margin-bottom: 20px;
+        
+        @media (min-width: 768px) {
+            font-size: 18px;
+            line-height: 1.556;
+            text-align: center;
+            padding: 0 37px 27px;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 0 37px 40px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__input {
+        margin-bottom: 5px;
+        border-radius: 3px;
+        width: 200px;
+        height: 45px;
+        background-color: #f6f6f6;
+        border-color: transparent;
+    }
+
+    &__btn {
+        margin-bottom: 5px;
+        border-color: transparent;
+        padding: 7px 46px;
+    }
+}

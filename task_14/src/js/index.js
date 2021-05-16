@@ -15,8 +15,6 @@ $(function () {
         })
     }
 
-    initStars();
-
     /* Slider (Слайдер) */
     $("[data-slider]").slick({
         arrows: false, 
@@ -41,7 +39,7 @@ $(function () {
         ]
     });
 
-    $('.slider').slick();
+    initStars();
     
 });
 
