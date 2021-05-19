@@ -57,11 +57,7 @@ body {
         flex-direction: column;
         margin-bottom: 20px;
 
-        @media (min-width: 768px) {
-            margin-bottom: 40px;
-        }
-
-        @media (min-width: 1200px) {
+        @media (min-width: 1600px) {
             margin-bottom: 34px;
             padding-left: 16px;
         }
@@ -86,7 +82,7 @@ body {
 
     &__nav {
 
-        @media (min-width: 1200px) {
+        @media (min-width: 1600px) {
             padding-left: 245px;
         }
 
@@ -100,7 +96,7 @@ body {
                 justify-content: center;
             }
 
-            @media (min-width: 1200px) {
+            @media (min-width: 1600px) {
                 justify-content: unset;
             }
 
@@ -281,17 +277,19 @@ body {
         img {
             position: relative;
             width: 100%;
+            cursor: pointer;
         }
 
         &:hover .services__item-info {
             opacity: 1;
-            }
+        }
 
         &-info {
             position: absolute;
             bottom: 20px;
             left: 35px;
             opacity: 0;
+            transition: opacity .2s linear;
         }
     }
     
@@ -303,7 +301,7 @@ body {
     }
 
     &__btnb {
-        padding: 2px 10px 0 1px;
+        padding: 2px 10px 1px 5px;
         margin-bottom: 5px;
     }
 }

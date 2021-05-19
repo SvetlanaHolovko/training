@@ -93,14 +93,17 @@
             margin-bottom: 60px;
         }
 
-        &-photo {
-            width: 100%;
+        & a {
             overflow: hidden;
             transition: transform .2s linear;
 
             &:hover {
                 transform: scale(0.98);
             }
+        }
+
+        &-photo {
+            width: 100%;
         }
 
         h3 {
