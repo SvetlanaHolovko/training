@@ -1,14 +1,10 @@
-
-.container {
-    width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 15px;
-    z-index: 99;
-}
+$white: #fff;
+$black: #222;
+$red: #ff3c2d;
+$grey: #f6f6f6;
 
 .btn {
-    padding: 10px 15px;
+    padding: 3px 10px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -36,6 +32,14 @@
 
         &:hover {
             background-color: darken($red, 15%);
+        }
+    }
+
+    &--black {
+        background: $black;
+
+        &:hover {
+            background-color: darken($grey, 55%);
         }
     }
 }
@@ -78,6 +82,11 @@
             
             &::before {
                 display: none;
+            }
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid $red;
             }
         }
         

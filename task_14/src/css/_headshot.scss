@@ -1,4 +1,3 @@
-
 .headshot {
     position: relative;
     background: url("../assets/headshot.jpg") center no-repeat;
@@ -30,9 +29,9 @@
 
     &__mark {
         border: 2px solid rgba($white, .149);;
-        left: 0;
+        left: 14px;
         top: 32px;
-        right: 0;
+        right: 14px;
         bottom: 0;
         margin: 0 auto;
         max-width: 1888px;
@@ -53,7 +52,7 @@
 
     &__container {
         width: 100%;
-        max-width: 1590px;
+        max-width: 1600px;
         padding: 0 15px;
         margin: 0 auto;
     }
@@ -76,7 +75,7 @@
 
         @media (min-width: 1200px) {
             width: 70%;
-            padding: 116px 0 10px 0;
+            padding: 113px 0 10px 11px;
         }
         
         h2 {
@@ -107,14 +106,13 @@
 
         @media (min-width: 1200px) {
             padding-top: 79px;
-            padding-left: 20px;
             margin-bottom: 0;
             text-align: left;
         }
     }
 
     &__btn {
-        padding: 8px 68px;
+        padding: 8px 65px;
         margin-bottom: 5px;
 
         @media (min-width: 768px) {
