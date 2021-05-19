@@ -283,15 +283,15 @@ body {
             width: 100%;
         }
 
+        &:hover .services__item-info {
+            opacity: 1;
+            }
+
         &-info {
             position: absolute;
-            bottom: 38px;
-            left: 26px;
+            bottom: 20px;
+            left: 35px;
             opacity: 0;
-
-            &:hover {
-                opacity: 1;
-            }
         }
     }
     
