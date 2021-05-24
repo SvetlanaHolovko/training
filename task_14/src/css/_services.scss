@@ -217,7 +217,7 @@
         &-info {
             position: absolute;
             bottom: 30px;
-            left: 5px;
+            left: 15px;
             opacity: 0;
             transition: opacity .2s linear;
 
@@ -266,6 +266,8 @@
         padding: 0px 90px;
 
         @media (min-width: 568px) {
+            padding: 0px 110px;
+            width: calc(25% - 15px);
             margin: 0 10px;
         }
 
@@ -274,6 +276,7 @@
         }
 
         @media (min-width: 1200px) {
+            width: 50%;
             margin: 0 15px;
             padding: 0px 115px;
         }

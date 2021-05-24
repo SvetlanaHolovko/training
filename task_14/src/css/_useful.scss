@@ -41,9 +41,16 @@
     }
 
     &__line {
-
         @media (min-width: 768px) {
             padding-left: 24px;
+        }
+
+        .img {
+            margin-right: 15px;
+
+            @media (min-width: 768px) {
+                margin-right: 0;
+            }
         }
     }
 

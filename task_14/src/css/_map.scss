@@ -44,7 +44,7 @@
         background: $white;
         text-align: center;
         margin: 0 auto;
-        padding: 0 10px;
+        padding: 10px;
 
         @media (min-width: 1200px) {
             max-width: 700px;  
@@ -53,7 +53,7 @@
         }
 
         h2 {
-            padding: 40px 34px 0;
+            padding: 30px 34px 0;
             margin-bottom: 11px;
             font-size: 26px;
             font-weight: 600;
@@ -82,36 +82,62 @@
             @media (min-width: 1200px) {
                 font-size: 18px;
                 padding: 0 37px;
-                margin-bottom: 20px;
+                margin-bottom: 22px;
             }
         }
     }
 
     &__search {
-        display: inline-block;
-        font-size: 15px;
+        width: 100%;
         margin-bottom: 20px;
+        padding: 0 20px 10px;
         
         @media (min-width: 768px) {
             font-size: 18px;
             line-height: 1.556;
             text-align: center;
-            padding: 0 37px 27px;
+            padding: 0 20px 10px;
         }
 
         @media (min-width: 1200px) {
-            padding: 0 37px 40px;
+            padding: 0 35px 29px;
             margin-bottom: 0;
+            max-width: 437px;
         }
     }
 
     &__input {
         margin-bottom: 5px;
         border-radius: 3px;
-        width: 200px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.1;
         height: 45px;
         background-color: #f6f6f6;
         border-color: transparent;
+        padding: 12px;
+        font-style: italic;
+
+        @media (min-width: 568px) {
+            width: 60%;
+        }
+
+        @media (min-width: 768px) {
+            width: 100%;
+        }
+
+        @media (min-width: 1024px) {
+            width: 60%;
+            font-size: 18px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 100%;
+        }
+
+        @media (min-width: 1400px) {
+            width: 55%;
+        }
     }
 
     &__btn {
