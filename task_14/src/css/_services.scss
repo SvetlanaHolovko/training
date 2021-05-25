@@ -216,11 +216,16 @@
     }
 
     &__button {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr;
-        grid-gap: 10px;
-        justify-items: center;
+        display: block;
+        padding: 0 10px;
+
+        @media (min-width: 568px) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr;
+            grid-gap: 10px;
+            justify-items: center;
+        }
 
         @media (min-width: 768px) {
             padding: 0 5px;
@@ -238,6 +243,7 @@
         color: $black;
         font-size: 26px;
         padding: 0px 70px;
+        margin-bottom: 5px;
 
         @media (min-width: 1024px) {
             padding: 0px 90px;
@@ -245,6 +251,7 @@
 
         @media (min-width: 1600px) {
             padding: 0px 162px;
+            margin-bottom: 0;
         }
     }
 }
