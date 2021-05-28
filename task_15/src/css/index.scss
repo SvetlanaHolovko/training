@@ -32,6 +32,17 @@ body {
     }
 }
 
+h3 {
+    color: #36ce10;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        font-size: 22px;
+    }
+}
+
 .container-list {
     margin: 0 auto;
     background: #fff;
@@ -92,17 +103,6 @@ body {
 
     @media (min-width: 768px) {
         margin-bottom: 40px;
-    }
-
-    &__title {
-        color: #36ce10;
-        font-weight: 700;
-        font-size: 20px;
-        margin: 0;
-
-        @media (min-width: 768px) {
-            font-size: 22px;
-        }
     }
 
     span {
@@ -242,6 +242,7 @@ body {
     }
 
     ul {
+        counter-reset: section;
         text-align: center;
         padding-left: 5px;
         margin: 0;
@@ -260,11 +261,43 @@ body {
             text-overflow: ellipsis;
             text-align: left;
 
+            position: relative;
+
+            &:before {
+            counter-increment: section;
+            content: counter(section) ".";
+            font-size: 20px;
+            line-height: 0.66;
+            position: absolute;
+            right: 90%;
+            top: 11px;
+            color: #36ce10;
+            text-align: center;
+            font-weight: 700;
+
+            @media (min-width: 500px) {
+                right: 95%;
+                top: 11px;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 26px;
+                right: 93%;
+                top: 7px;
+            }
+
+            @media (min-width: 950px) {
+                font-size: 26px;
+                right: 94%;
+                top: 8px;
+            }
+        }
+
             a {
+                margin-left: 35px;
                 font-size: 16px;
                 font-weight: 400;
-                margin-left: 7px;
-                text-decoration-style: dotted;
+                text-decoration-style: solid;
                 color: #494b49;
                 transition: color .2s linear;
 
@@ -324,7 +357,7 @@ body {
 
     p {
         color: #494b49;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         margin-bottom: 10px;
     }
@@ -343,6 +376,7 @@ body {
         }
         
         li {
+            font-size: 16px;
             margin-bottom: 10px;
         }
     }
