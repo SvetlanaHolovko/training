@@ -116,10 +116,15 @@
             "left";
 
         @media (min-width: 768px) {
+            gap: 20px;
+        }
+
+        @media (min-width:1024px) {
             grid-template-areas: 
             "left right";
             grid-template-rows: 1fr;
             grid-template-columns: 49% 51%;
+            gap: 0;
         }
     }
 
