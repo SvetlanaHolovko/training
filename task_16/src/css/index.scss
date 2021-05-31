@@ -29,7 +29,7 @@ h1 {
     text-align: center;
 
     @media (min-width: 768px) {
-        text-align-last: left;
+        text-align: left;
         font-size: 30px;
         padding: 40px 50px 0;
     }
@@ -54,7 +54,7 @@ ul {
     @media (min-width: 768px) {
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(auto-fit, (13, 50px));
+        grid-template-columns: repeat(13, 50px);
         grid-template-rows: repeat(8, 100px);
         width: 75%;
     }
