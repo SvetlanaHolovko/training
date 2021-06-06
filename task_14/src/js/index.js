@@ -1,18 +1,36 @@
-import Shady from './components/shady';
+// import Shady from './components/shady';
 
-const slimShady = new Shady('Slim');
-console.log(slimShady.fullName);
+// const slimShady = new Shady('Slim');
+// console.log(slimShady.fullName);
 
 $(function () {
+
+    $('.header__burger').click(function (event) {
+        $('.header__burger, .header__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
     
-    function initStars() {
-        const stars = $('.stars li');
+    /* Прокрутка при клике*/
+    const menuLinks = document.querySelectorAll('.header__nav-link[data-scroll]');
 
-        stars.on('click', function () {
-            $(stars).removeClass('active');
-            $(this).toggleClass('active');
+    if (menuLinks.length > 0) {
+        menuLinks.forEach(menuLink => {
+            menuLink.addEventListener("click", onMenuLinkClick);
+        });
 
-        })
+        function onMenuLinkClick(e) {
+            e.preventDefault();
+            const menuLink = e.target;
+            if (menuLink.dataset.scroll && document.querySelector(menuLink.dataset.scroll)) {
+                const scrollBlock = document.querySelector(menuLink.dataset.scroll);
+                const scrollBlockValue = scrollBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+
+                window.scrollTo({
+                    top: scrollBlockValue,
+                    behavior: "smooth"
+                });
+            }
+        }
     }
 
     /* Slider (Слайдер) */
@@ -38,6 +56,16 @@ $(function () {
             }
         ]
     });
+
+    function initStars() {
+        const stars = $('.stars li');
+
+        stars.on('click', function () {
+            $(stars).removeClass('active');
+            $(this).toggleClass('active');
+
+        })
+    }
 
     initStars();
     

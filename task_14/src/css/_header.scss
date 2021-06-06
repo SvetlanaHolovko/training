@@ -1,8 +1,32 @@
 .header {
-    padding: 22px 15px 15px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    position: fixed;
+    width: 100%;
+    max-height: 75px;
+    top: 0;
+    left: 0;
+    color: $white;
+    z-index: 999;
+
+    @media (min-width: 768px) {
+        padding: 19px 15px 15px;
+        max-height: 100px;
+    }
 
     @media (min-width: 1200px) {
         padding: 22px 0;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $white;
+        z-index: 1;
     }
 
     &__container {
@@ -15,9 +39,10 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: space-between;
 
         @media (min-width: 768px) {
-            justify-content: space-between;
+            flex-wrap: nowrap;
         }
     }
 
@@ -25,10 +50,13 @@
         display: inline-block;
         margin-bottom: 20px;
         width: 100%;
+        max-width: 200px;
         height: 100%;
+        z-index: 999;
 
         @media (min-width: 768px) {
             width: 20%;
+            max-width: 245px;
         }
 
         @media (min-width: 1200px) {
@@ -38,52 +66,145 @@
         }
 
         img {
-            margin: 0 auto;
+            display: block;
             padding: 0 10px;
 
             @media (min-width: 1200px) {
-                margin: 0;
                 padding: 0;
             }
         }
     }
 
+    &__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        z-index: 999;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            background: #000;
+            width: 100%;
+            height: 10%;
+            left: 0;
+            z-index: 999;
+            transition: all .3s ease;
+        }
+
+        &:before {
+            top: 0;
+        }
+
+        &:after {
+            bottom: 0;
+        }
+
+        &.active::before {
+            transform: rotate(-45deg) translate(0, -50%);
+            top: 50%;
+        }
+
+        &.active::after {
+            transform: rotate(45deg) translate(0, 50%);
+            bottom: 50%;
+        }
+
+        &.active span {
+            transform: scale(0) translate(0, -50%);
+        }
+
+        span {
+            position: absolute;
+            background: #000;
+            width: 100%;
+            height: 10%;
+            left: 0;
+            top: 50%;
+            transform: scale(1) translate(0, -50%);
+            z-index: 2;
+            transition: all .3s ease;
+        }
+    }
+
+    &__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background: $black;
+        opacity: .94;
+        color: $white;
+        padding: 100px 10px 20px 10px;
+        transition: all .3s ease;
+
+        @media (min-width: 768px) {
+            position: relative;
+            z-index: 2;
+            width: calc(100% - 150px);
+            padding: 0;
+            background: $white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media (min-width: 1024px) {
+            width: calc(100% - 245px);
+        }
+
+        &.active {
+            top: 0;
+        }
+    }
+
     &__nav {
-        text-align: center;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         width: 100%;
 
-        @media (min-width: 568px) {
+        @media (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
 
         @media (min-width: 768px) {
-            width: 50%;
+            width: 65%;
             margin-bottom: 0;
         }
 
         @media (min-width: 1200px) {
-            width: 55%;
-            margin-right: -79px;
-            margin-bottom: 1px;
+            width: 60%;
             justify-content: unset;
+            margin-left: 61px;
         }
 
         a {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             padding: 0 19px;
             text-decoration: none;
-            color: $black;
-            font-size: 16px;
+            color: $white;
+            font-size: 24px;
             line-height: 1.75;
             position: relative;
             transition: color 0.2s linear;
 
             @media (min-width: 768px) {
                 margin-bottom: 0;
+                font-size: 16px;
+                color: $black;
             }
 
             &:hover {
@@ -97,7 +218,7 @@
             &:after {
                 content: "";
                 display: block;
-                width: 60%;
+                width: 20%;
                 height: 2px;
                 background: rgb(255, 60, 45);
                 opacity: 0;
@@ -106,31 +227,41 @@
                 left: 0;
                 z-index: 1;
                 transition: opacity .2s linear;
+
+                @media (min-width: 768px) {
+                    width: 60%;
+                }
             }
         }
     }
 
     &__social {
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: start;
+        padding: 0 19px;
         width: 100%;
+        z-index: 999;
 
         @media (min-width: 768px) {
             width: 30%;
-            display: flex;
-            flex-wrap: wrap;
             justify-content: center;
+            padding: 0;
         }
         @media (min-width: 1200px) {
             justify-content: flex-end;
+            flex-direction: row;
         }
     }
 
     &__btn {
         padding: 5px 22px;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
 
         @media (min-width: 768px) {
             font-size: 16px;
+            margin-bottom: 10px;
         }
 
         @media (min-width: 1200px) {
@@ -142,10 +273,10 @@
     &__icon {
         display: inline-block;
         vertical-align: middle;
-        margin: 0 auto;
-        padding-left: 20px;
+        margin-bottom: 10px;
 
         @media (min-width: 768px) {
+            margin: 0 auto;
             padding-left: 5px;
             margin: 0 0 5px;
         }

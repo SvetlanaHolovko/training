@@ -10,6 +10,7 @@
     margin-bottom: 20px;
 
     @media (min-width: 768px) {
+        padding-top: 100px;
         padding-bottom: 40px;
         margin-bottom: 50px;
         text-align: left;
@@ -17,8 +18,9 @@
 
     @media (min-width: 1024px) {
         min-height: 511px;
-        background-position: 16% 50%;
+        background-position: 34% 50%;
         margin-bottom: 100px;
+        padding-bottom: 71px;
     }
 
     &::after {
@@ -35,7 +37,7 @@
 
     &__title {
         position: relative;
-        padding-top: 55px;
+        padding-top: 100px;
         z-index: 99;
 
         @media (min-width: 768px) {

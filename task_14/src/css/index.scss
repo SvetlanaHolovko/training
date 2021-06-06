@@ -19,7 +19,12 @@ body {
     font-size: 16px;
     line-height: 1.6;
     background-color: $white;
+    color: $black;
     height: 100%;
+
+    &.lock {
+        overflow: hidden;
+    }
 }
 
 #wrapper {
@@ -32,6 +37,9 @@ body {
 
 main {
     flex: 1 1 auto;
+}
+.page {
+    overflow: hidden;
 }
 
 .container {
