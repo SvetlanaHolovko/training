@@ -5,14 +5,20 @@
 
 $(function () {
 
-    $('.header__burger').click(function (event) {
-        $('.header__burger, .header__menu').toggleClass('active');
-        $('body').toggleClass('lock');
-    });
-    
+    /* Бургер-меню */
+
+    const burgerMenu = document.querySelector('.header__burger');
+    const menuHeader = document.querySelector('.header__menu');
+    if (burgerMenu) {
+        burgerMenu.addEventListener("click", function (e) {
+            document.body.classList.toggle('lock');
+            burgerMenu.classList.toggle('active');
+            menuHeader.classList.toggle('active');
+        });
+    }
+
     /* Прокрутка при клике*/
     const menuLinks = document.querySelectorAll('.header__nav-link[data-scroll]');
-
     if (menuLinks.length > 0) {
         menuLinks.forEach(menuLink => {
             menuLink.addEventListener("click", onMenuLinkClick);
@@ -24,6 +30,12 @@ $(function () {
             if (menuLink.dataset.scroll && document.querySelector(menuLink.dataset.scroll)) {
                 const scrollBlock = document.querySelector(menuLink.dataset.scroll);
                 const scrollBlockValue = scrollBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+
+                if (burgerMenu.classList.contains('active')) {
+                    document.body.classList.remove('lock');
+                    burgerMenu.classList.remove('active');
+                    menuHeader.classList.remove('active');
+                }
 
                 window.scrollTo({
                     top: scrollBlockValue,
@@ -63,7 +75,6 @@ $(function () {
         stars.on('click', function () {
             $(stars).removeClass('active');
             $(this).toggleClass('active');
-
         })
     }
 

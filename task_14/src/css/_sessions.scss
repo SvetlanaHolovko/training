@@ -114,9 +114,12 @@
         }
 
         &--white {
-            padding-left: 42px;
             color: $black;
             background: $grey;
+
+            @media (min-width: 768px) {
+                padding-left: 42px;
+            }
 
             ul {
                 li {
