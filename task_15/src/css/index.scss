@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 @import "_reset";
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    background: #E5E5E5;
+    background: #e5e5e5;
     color: #595959;
 }
 
@@ -18,7 +18,7 @@ body {
 
 .container {
     max-width: 1280px;
-    background: #F5F7FA;
+    background: #f5f7fa;
     padding: 20px;
 
     @media (min-width: 768px) {
@@ -53,11 +53,10 @@ h3 {
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
 }
 
 .sidebar__section {
-    background: #1E2939;
+    background: #1e2939;
     color: #fff;
     padding: 20px;
 
@@ -87,7 +86,7 @@ h3 {
         width: 100%;
         object-fit: cover;
         margin-bottom: 20px;
-        
+
         @media (min-width: 568px) {
             margin-bottom: 30px;
         }
@@ -107,9 +106,9 @@ h3 {
 
     span {
         font-weight: 600;
-        font-size: 18px;
-        margin-right: 7px;
-
+        font-size: 16px;
+        margin-right: 5px;
+        
         @media (min-width: 768px) {
             font-size: 20px;
             margin-right: 2px;
@@ -124,10 +123,10 @@ h3 {
     a {
         font-size: 16px;
         text-decoration-line: underline;
-        color: #FFFFFF;
+        color: #ffffff;
         text-decoration: none;
         opacity: 0.5;
-        transition: color .2s linear, opacity .2s linear;
+        transition: color 0.2s linear, opacity 0.2s linear;
 
         @media (min-width: 768px) {
             font-size: 20px;
@@ -136,6 +135,22 @@ h3 {
         &:hover {
             color: #36ce10;
             opacity: 1;
+        }
+
+        &.city {
+            position: relative;
+            vertical-align: middle;
+            margin-left: 30px;
+            
+            &:before {
+                content: " ";
+                position: absolute;
+                background: transparent url('../assets/location_icon.png') no-repeat 50% 50%/contain;
+                width: 14px;
+                height: 18px;
+                left: -30px;
+                top: 2px;
+            }
         }
     }
 }
@@ -161,7 +176,7 @@ h3 {
         color: #36ce10;
 
         span {
-            color: #FFF;
+            color: #fff;
             font-size: 16px;
             font-weight: 400;
         }
@@ -169,8 +184,8 @@ h3 {
 }
 
 .content {
-    color: #1E2939;
-    padding: 40px 20px 20px;
+    color: #1e2939;
+    padding: 40px 10px 20px;
 
     @media (min-width: 768px) {
         width: calc(100% - 300px);
@@ -186,9 +201,10 @@ h3 {
 .about-me {
     text-align: center;
     margin-bottom: 20px;
+    padding: 0 10px;
 
     @media (min-width: 768px) {
-        text-align-last: left;
+        text-align: left;
     }
 
     @media (min-width: 1024px) {
@@ -256,42 +272,41 @@ h3 {
             font-weight: 700;
             margin-bottom: 10px;
             white-space: nowrap;
-            overflow: hidden; 
+            overflow: hidden;
             padding: 5px;
             text-overflow: ellipsis;
             text-align: left;
-
             position: relative;
 
             &:before {
-            counter-increment: section;
-            content: counter(section) ".";
-            font-size: 20px;
-            line-height: 0.66;
-            position: absolute;
-            right: 90%;
-            top: 11px;
-            color: #36ce10;
-            text-align: center;
-            font-weight: 700;
-
-            @media (min-width: 500px) {
-                right: 95%;
+                counter-increment: section;
+                content: counter(section) ".";
+                font-size: 20px;
+                line-height: 0.66;
+                position: absolute;
+                right: 90%;
                 top: 11px;
-            }
+                color: #36ce10;
+                text-align: center;
+                font-weight: 700;
 
-            @media (min-width: 768px) {
-                font-size: 26px;
-                right: 93%;
-                top: 7px;
-            }
+                @media (min-width: 500px) {
+                    right: 95%;
+                    top: 11px;
+                }
 
-            @media (min-width: 950px) {
-                font-size: 26px;
-                right: 94%;
-                top: 8px;
+                @media (min-width: 768px) {
+                    font-size: 26px;
+                    right: 93%;
+                    top: 7px;
+                }
+
+                @media (min-width: 950px) {
+                    font-size: 26px;
+                    right: 94%;
+                    top: 8px;
+                }
             }
-        }
 
             a {
                 margin-left: 35px;
@@ -299,10 +314,10 @@ h3 {
                 font-weight: 400;
                 text-decoration-style: solid;
                 color: #494b49;
-                transition: color .2s linear;
+                transition: color 0.2s linear;
 
                 &:hover {
-                    color: #36ce10;
+                color: #36ce10;
                 }
             }
 
@@ -314,7 +329,7 @@ h3 {
                     display: inline-block;
                     text-align: left;
                     font-weight: 700;
-                    color: #1E2939;
+                    color: #1e2939;
                     font-size: 18px;
 
                     @media (min-width: 568px) {
@@ -347,7 +362,7 @@ h3 {
     margin-bottom: 20px;
 
     h4 {
-        color: #1E2939;
+        color: #1e2939;
         margin-bottom: 10px;
 
         span {
@@ -365,7 +380,7 @@ h3 {
     ul {
         font-weight: 400;
         font-size: 14px;
-        color: #1E2939;
+        color: #1e2939;
         padding-left: 5px;
         margin-bottom: 20px;
         text-align: left;
@@ -374,7 +389,7 @@ h3 {
             text-align: left;
             padding-left: 20px;
         }
-        
+
         li {
             font-size: 16px;
             margin-bottom: 10px;
@@ -403,7 +418,7 @@ h3 {
             font-size: 18px;
             margin-bottom: 10px;
         }
-        
+
         h5 {
             font-weight: 700;
             font-size: 16px;
@@ -414,12 +429,34 @@ h3 {
                 color: #36ce10;
             }
         }
-        
+
         p {
             color: #494b49;
             font-size: 14px;
             font-weight: 400;
             margin-bottom: 10px;
+            margin-top: 20px;
+        }
+    }
+
+    &__certificate {
+        font-weight: 700;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    & a {
+        font-size: 16px;
+        text-decoration-line: underline;
+        color: #494b49;
+        transition: color 0.2s linear;
+
+        @media (min-width: 768px) {
+            font-size: 20px;
+        }
+
+        &:hover {
+            color: #36ce10;
         }
     }
 }
