@@ -10,3 +10,11 @@
 - SASS (task_10)
 - Bootstrap (task_12)
 - Gulp (task_14)
+
+# training - Учебный проект Hillel - Studio
+## Технологии
+- HTML
+- CSS
+- SCSS 
+- Gulp 
+- Flex-box
